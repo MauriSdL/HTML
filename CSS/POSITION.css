@@ -1,0 +1,57 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    padding: 20px 20px;
+}
+
+.z-index {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(243, 168, 168);
+}
+
+.position-static {
+    border: 0.3px solid rgb(228, 173, 173);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(226, 226, 106);
+}
+
+.position-relative {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(243, 168, 168);
+}
+
+.position-absolute {
+    border: 0.3px solid rgb(228, 173, 173);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:rgb(226, 226, 106);
+}
+
+.position-fixed {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(243, 168, 168);
+}
+
+.position-sticky {
+    border: 0.3px solid rgb(228, 173, 173);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(226, 226, 106);
+}
+
+

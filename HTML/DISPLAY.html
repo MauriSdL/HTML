@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/DISPLAY.css">
+    <title>Display</title>
+</head>
+<body>
+    <header>
+        <h1>Display</h1>
+        <nav>
+            <ul>
+                <li class="menu"></li>>
+                    <a href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <br>
+        <h2>none</h2>
+        <p>O elemento não aparece na página (é como se não existisse).</p>
+
+        <br>
+
+        <h2>contents</h2>
+        <p>Faz o elemento sumir visualmente, mas mantém seus filhos no fluxo da página.</p>
+
+        <br><br>
+
+        <h2>block</h2>
+        <p>Ocupa toda a largura disponível, começa em uma nova linha. Ex:</p>
+        <pre><code>
+            <div class="block-externo">
+                <div class="block-interno">
+                    &lt;html&gt;
+                    &lt;header&gt;
+                    &lt;body&gt;
+                    &lt;footer&gt;
+                    &lt;nav&gt;
+                    &lt;article&gt;
+                    &lt;aside&gt;
+                    &lt;form&gt; 
+                    &lt;main&gt;
+                    &lt;section&gt;
+                    &lt;pre&gt;
+                </div>
+
+                <div class="block-interno">
+                    &lt;h1&gt;/&lt;h6&gt;
+                    &lt;video&gt;
+                    &lt;div&gt;
+                    &lt;hr&gt;
+                    &lt;ol&gt;
+                    &lt;li&gt;
+                    &lt;ul&gt;
+                    &lt;dd&gt;
+                    &lt;dl&gt;
+                    &lt;dt&gt; 
+                    &lt;p&gt;
+                </div>
+
+                <div class="block-interno">
+                    &lt;address&gt;
+                    &lt;canvas&gt;
+                    &lt;blockquote&gt;
+                    &lt;fieldset&gt;
+                    &lt;figcaption&gt;
+                    &lt;figure&gt;
+                    &lt;table&gt;
+                    &lt;tfoot&gt;
+                    &lt;noscript&gt;
+                </div>
+            </div>
+        </code></pre>.
+        
+        <h2>inline</h2>
+        <p>Ocupa apenas o espaço do conteúdo, não quebra linha. Ex: <br>
+            <pre><code>
+                <div class="block-in-line">
+                        <div class="block-inline">
+                        &lt; a &gt;
+                        &lt; abbr &gt;
+                        &lt; acronym &gt;
+                        &lt; b &gt;
+                        &lt; bdo &gt;
+                        &lt; br &gt;
+                        &lt; button &gt;
+                        &lt; cite &gt;
+                        &lt; code &gt;
+                        &lt; dfn &gt;
+                        &lt; em &gt;
+                    </div>
+
+                    <div class="block-inline">
+                        &lt; i &gt;
+                        &lt; img &gt;
+                        &lt; input &gt;
+                        &lt; kbd &gt;
+                        &lt; label &gt;
+                        &lt; map &gt;
+                        &lt; object &gt;
+                        &lt; output &gt;
+                        &lt; q &gt;
+                        &lt; samp &gt;
+                    </div>
+
+                    <div class="block-inline">
+                        &lt; script &gt;
+                        &lt; select &gt;
+                        &lt; small &gt;
+                        &lt; span &gt;
+                        &lt; strong &gt;
+                        &lt; sub &gt;
+                        &lt; sup &gt;
+                        &lt; textarea &gt;
+                        &lt; time &gt;
+                        &lt; tt &gt;
+                        &lt; var &gt;
+                    </div>
+                </div>
+            </code></pre>
+        </p>
+
+        <h2>Tags que não sofrem alteração de display (renderização neutra)</h2>
+        <p>São tags sem impacto visual <br> O navegador as interpreta como metadados ou estrutura <br> Não aparecem na página.</p>        <pre><code>
+            <div class="bloco1-semAlteracao">
+                &lt; head &gt;
+                &lt; meta &gt;
+                &lt; link &gt;
+                &lt; title &gt;
+                &lt; style &gt;
+                &lt; script &gt;
+                &lt; base &gt;
+                &lt; param &gt;
+                &lt; source &gt;
+                &lt; track &gt;
+            </div>
+        </code></pre>
+
+        <h2>inline-block</h2>
+        <p>Mistura os dois: fica na mesma linha (como inline), mas permite definir largura e altura (como block).</p>
+        <br>
+
+        <h2>Css</h2>
+        <pre><code>
+            .container {
+                display: flex;                       /* Divs lado a lado */
+                justify-content: space-between;      /* Espaço entre colunas (opcional) */
+            }
+
+            .Divs-internas {
+                padding: 5px;
+                text-align: left;
+            }
+        </code></pre>
+
+        <br>
+    </main>
+    
+    <footer>
+        <p class="whatsApp">
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

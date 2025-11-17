@@ -1,0 +1,24 @@
+
+h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.descricao {
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: left;
+    padding: 25px 0px 30px 0px;
+}
+
+iframe{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+.iframe-2 {
+    margin-left: 35px;
+    text-align: center;
+    
+}

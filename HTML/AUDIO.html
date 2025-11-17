@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/AUDIO.css">
+</head>
+<body>
+    <header>
+        <h1>Audio</h1>
+        <nav class="nav">
+            <ul>
+                <li class="menu"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="player">
+            <img src="../IMG/img-player.png" alt="player">
+            
+            <audio controlsList="nodownload"
+                controls
+                src="../AUDIO/Jesse_y_Joy.mp3"
+                type="audio/mpeg">
+            </audio>
+        </div>
+
+        
+        <div class="codigo-fonte">
+            <pre><code>
+                &lt;audio controls
+                    controlsList="nodownload"&gt;
+
+                    src="../local-onde-esta-a-musica/nome-da-musica.mp3"
+                    type="audio/mpeg" >
+                
+                &lt;/audio&gt;
+            </code></pre>
+        </div>
+    
+
+        <div class="atributos">
+            <h2>Atrubutos:</h2>
+
+            <p>controls - Mostra os controles play, pause, volume.</p>
+            <p>muted - Se deve iniciar pausado.</p>
+            <p>src="" -  Local da pasta do audio.</p>
+            <p>autoplay - Iniciar a musica autmaticamente.</p>
+            <p>loop - Se o audio deve se repetir ao terminal de tocar.</p>
+            <p>controlsList="nodownload" - Remove o botão tre Pontinhos com a opção de download.</p>
+            <p>type -  Tipo do arquivo, Ajuda o navegador a saber como lidar com o arquivo <br> audio/mpeg, audio/OGG, audio/WAV, audio/MP3.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

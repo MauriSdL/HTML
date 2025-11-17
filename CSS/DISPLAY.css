@@ -1,0 +1,23 @@
+
+.block-externo {
+    /* coloca as divs lado a lado */
+    display: flex;
+
+    /* espaço entre elas (opcional) */
+    justify-content: space-between;
+}
+
+.block-interno {
+    padding: 0px 210px 0px 0px;
+    text-align: left;
+}
+
+.block-in-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-inline {
+    text-align: left;
+    padding: 0px 171px 0px 0px;
+}

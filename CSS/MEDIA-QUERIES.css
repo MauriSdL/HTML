@@ -1,0 +1,35 @@
+
+:root {
+  /* Modo Claro */
+  --cor-fundo: #F5F7FA;
+  --cor-primaria: #3A7DFF;
+  --cor-secundaria: #FFD166;
+  --cor-acento: #06D6A0;
+  --cor-texto: #1C1C1C;
+}
+
+body.dark-mode {
+  /* Modo Escuro */
+  --cor-fundo: #1E1E2E;
+  --cor-primaria: #4F9DFF;
+  --cor-secundaria: #FFD166;
+  --cor-acento: #00C896;
+  --cor-texto: #EAEAEA;
+}
+
+h1 {
+    padding: 13px 0px 13px 0px;
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    padding: 5px 0px 15px 0px;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 30px;
+}

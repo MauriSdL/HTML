@@ -1,0 +1,46 @@
+
+
+h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.list-nao-ordenada {
+    margin: 1px 15px 15px 15px;
+    border-radius: 20px;
+    background-color: pink;
+}
+
+.li-list-0rdenada {
+    margin-left: 60px;
+    padding-bottom: 14px;
+}
+
+.list-ordenada {
+    padding-bottom: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+ol, .list-orde {
+    padding-bottom: 20px;
+    margin-left: 57px;
+}
+
+.list-por-definicao {
+    margin: 15px 15px 20px 15px;
+    border-radius: 20px;
+    background-color:pink;
+}
+
+dl, dt, dd {
+    padding-bottom: 15px;
+    margin-left: 25px;
+}
+
+.code {
+    margin: 15px 15px 10px 15px;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 111);
+}

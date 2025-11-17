@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video'</title>
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/VIDEOS.css">
+</head>
+<body>
+    <header>
+        <h1>Video</h1>
+        <nav>
+            <ul>
+                <li class="menu"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <h2>Video localmente</h2>
+        <p>O video fica dentro de uma pasta dentro do seu projeto</p>
+        <br>
+        <div class="container-1">
+            <video class="video-1" src="../VIDEO/Daçarino.mp4" autoplay controls ></video>
+            <div class="container1-filho">
+                <br><br>
+                <h2>Codigo fonte:</h2>
+                <br>
+                <pre><code>
+                    &lt;video&gt; 
+                        poster="../img/Carro azul.jpg"
+                        src="../video/Daçarino.mp4"
+                        type="video/mp4"
+                        width="40%"
+                        autoplay
+                        controls
+                        desablepictureinpicture
+                        controlsList="nodownload nofullscreen"
+                        &gt;
+                    &lt;/video&gt;
+                </code></pre>
+            </div>
+        </div>
+
+        <br>
+        <h2>Video Atributos</h2>
+        <div class="atributos">
+            <p class="atri-p"><b>width="40%" - Largura do video.</b></p>
+            <p class="atri-p"><b>autoplay - </b> Inicia o play automaticamente.</p>
+            <p class="atri-p"><b>controls - </b> Exibe os controles play, pause, fullscreen, dawnloads.</p>
+            <p class="atri-p"><b>type="video/mp4" - </b>Videos suportados video/mp4, video/webm, video/OGG.</p>
+            <p class="atri-p"><b>src="Diretorio do video.jpg" - </b>  Diretorio(pasta do projeto) onde esta seu video.</p>
+            <p class="atri-p"><b>poster="Diretorio da imagem" - </b> Diretorio(pasta do projeto) onde esta sua imagem da capa do video.</p>
+            <p class="atri-p"><b>desablepictureinpicture - </b> Desabilita os 3 pontinhos com as opções de Dawnloads, picture-in-picture e velocidade de reprodução.</p>
+            <p class="atri-p"><b>controlsList="nodownload nofullscrieen" - </b><b>nodownload-</b>Desabilita opçao de Dawnload, <b>nofullscrieen-</b>Desabilita opção tela cheia.</p>
+        </div>
+        
+        
+        <div class="container-2">
+            <h2>Video pego do Vimeo</h2>
+            <p>No Vimeo clique em compartilhar -> Incorporar -> Copiar código de incorporação e cole no lugar da tag video.</p>
+            <iframe
+            src="https://player.vimeo.com/video/371044250?h=936b68a6ed"
+            width="650"
+            height="360"
+            frameborder="0"
+            title="vimeo-player"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="container-3">
+            <h2>Video pego no Youtube</h2>
+            <p>No youtube clique em compartilhar -> Incorporação -> Copie o Ifreme passado e cole no lugar da tag video.</p>
+            <iframe
+            src="https://www.youtube.com/embed/AVM8QJmDLM4?si=B2AcAeR9DSVtEBXu"
+            width="560"
+            height="315"
+            frameborder="0"
+            title="YouTube video player"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+            </iframe>"
+        </div>
+
+        <div class="video-Iframe">
+            <br>
+            <h2>Video dentro iframe</h2>
+            <br>
+            <pre><code>&lt;iframe src="url-do-video" frameborder="0"&gt;&lt;/iframe&gt;</code></pre>
+
+            <p><b>src</b> - Define o endereço (URL) da página ou conteúdo a ser exibido dentro do iframe. Exemplo: src="https://www.youtube.com"</p>
+
+            <p><b>title</b> - Descreve o conteúdo do iframe para acessibilidade (leitores de tela). Sempre recomendado.</p>
+
+            <p><b>name</b> - Dá um nome ao iframe, usado para abrir links dentro dele via target="nome". Exemplo: <a href="pagina.html" target="meuIframe">Abrir</a></p>
+
+            <p><b>allow</b> - Controla permissões dentro do iframe (como acesso à câmera, microfone, reprodução automática, etc.). Exemplo: allow="camera; microphone; autoplay"</p>
+
+            <p><b>allowfullscreen</b> - Permite que o iframe entre em tela cheia (muito usado com vídeos do YouTube). Exemplo: <iframe allowfullscreen></iframe></p>
+            <br>
+            <p><b>loading</b> - Define o carregamento preguiçoso (lazy loading) — só carrega o iframe quando estiver visível. Valores: "lazy" (recomendado) ou "eager".</p>
+
+            <p><b>referrerpolicy</b> - Controla o envio de informações de referência (URL de origem). Exemplo: referrerpolicy="no-referrer"</p>
+
+            <p><b>sandbox</b> - Restringe o que o conteúdo dentro do iframe pode fazer, aumentando a segurança. Exemplo: sandbox="allow-scripts allow-forms"</p>
+
+            <p><b>srcdoc</b> - Permite incluir HTML diretamente dentro do iframe, sem precisar de um arquivo externo.Exemplo: <iframe srcdoc="<h1>Olá Mundo!</h1>"></iframe></p>
+        </div>
+    </main>
+
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank" rel="noopener"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.paragrado {
+    margin: 7px 0px 7px 30px;
+    font-size: 24px;
+}
+
+.tabela-container {
+    margin: 30px 8% 30px 8%;
+    background-color: yellow;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.codigo-html-css-container {
+    display: flex;
+    top: 0px;
+    width: 1128px;
+    height: 500px;
+    margin: 5px 0% 5px -10%;
+}
+
+.codigoHTML {
+    margin-left: 20%;
+    z-index: 1;
+    width: 497px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(30, 210, 75);
+}
+
+.codigoCSS {
+    margin-left: 2%;
+    z-index: 0;
+    width: 697px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: chocolate;
+}
+
+pre, code {
+    margin-right: 125px;
+}

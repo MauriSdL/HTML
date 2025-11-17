@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/POSITION.css">
+    <title>Position</title>
+</head>
+<body>
+    <header>
+        <h1>Position</h1>
+        <nav>
+            <ul>
+                <li class="menu"></li>>
+                    <a href="../../index.html">Home</a>
+                    <a href="https://www.youtube.com/watch?v=Y7NeqpwLM2g" target="_blank">Giovanna moeller </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="z-index">
+            <h2>z-index</h2>
+            <p>Coloca um elemento na frete do outro.</p>
+            <p>z-index:2; ==> Fica na frente o que tiver o numero maior e assim sucessivamente com os demais. </p>
+        </div>
+
+        <div class="position-static">
+            <h2>Position static</h2>            
+            <p>O static ja é a configuração ele é o padrao de todas as Tags.</p> <br>
+            <p><strong>top, right, bootom, left</strong></p> <br>
+            <p>Não funciona no static.</p>
+        </div>
+
+        <div class="position-relative">
+            <h2>position relative</h2>            
+            <p>No container,
+            <br> Ao colocar o <strong>position relative'</strong> sem nenhum <strong>TOP, RIGHT, BOTTOM, LEFT</strong>, Ele fica com a configuraçao do static que seria a mesma das tags.</p>
+            <br>
+            <p>O continer presciza ter um <strong>POSITIVE RELATIVE</strong>.</p>
+            <p>O filho presciza ter <strong>POSITION ABSOLUTE.</strong></p>
+            <br>
+            <p>Isso para que o <strong>FILHO</strong> seja posicionado respeitando o escopo <strong>do Container.</strong></p>
+            <p>Caso o <strong>Container</strong> não tenha um <strong>position relative</p>
+            <p></strong>O <strong>position Absolute dom filho</strong> respeitaria o escopo da <strong>margin</strong> da pagina <strong>Body</strong>.</p>
+        </div>
+
+        <div class="position-absolute">
+            <h2>position absolute</h2>
+            <p>Ele é posicionado ao elemento mais proximo que tenha um Position relative.Respeita a hierarquia.</p>
+            <p>O absolute deixa de seguir a seguencia de ordem das tags</p>
+            <p>Mas se não tiver nenhum container com <strong>Position relative</strong> Ele respeita a margin do body usando top, hight, bottom, left.</p>
+        </div>
+
+        <div class="position-fixed">
+            <h2>position fixed</h2>
+            <p>Fica fixo na pagina Idependente do Scrow, Ele fica fixo em relação ao tamanho do Body.</p>
+            <p>Funciona com top, right, bottom, left, Respeitando a mergin do body.</p>
+        </div>
+
+        <div class="position-sticky">
+            <h2>position sticky</h2>    
+            <p>É baseado na posição de rolagem do usuario (Sticky Adesivo colar).</p>
+            <p>Vô fixar na tela até quando a posição de rolagem(Top) chegar.</p>
+            <p>top, right, bottom, left funciona normalmente.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p class="whatsApp">
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

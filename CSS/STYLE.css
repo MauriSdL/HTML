@@ -1,0 +1,86 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 20px 40px 20px 40px;
+  background-color: #00C896;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  border-radius: 25px;
+  box-shadow: 0px 0px 40px black;
+}
+
+main {
+  background-color: white;
+}
+
+header {
+  border-radius: 23.5px 23.5px 0px 0px;
+  background-color: black;
+  height: 110px;
+}
+
+.menu {
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: white;
+  display: inline;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+h1 {
+  padding: 13px 0px 13px 0px;
+  text-align: center;
+  color:white;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+p {
+  margin-left: 30px;
+}
+
+.frase-ded-efeito {
+  text-align: center;
+}
+
+.despedida {
+  text-align: center;
+}
+
+footer {
+  height: 58px;
+  background-color: black;
+  border-radius: 0px 0px 25px 25px;
+}
+
+a {
+  text-decoration:none;
+  border-radius:15px;
+  background-color: rgb(221, 170, 151);
+}
+
+.whatsApp {
+  text-align: center;
+  transform: translate(-1%, 110%);
+}
+
+a {
+  font-weight:bold;
+  color:black;
+  padding: 3px 4px 3px 4px;
+}

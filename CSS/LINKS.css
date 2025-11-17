@@ -1,0 +1,20 @@
+
+body {
+    .container {
+        width: 80%;
+        border-radius: 25px;
+        padding: 25px;
+        margin: 20px 12% 20px 8%; 
+        background-color: pink;
+    }
+
+    pre {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .link-dos-Sites {
+        margin-left: 50%;
+    }
+}

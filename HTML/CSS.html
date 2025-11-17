@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/CSS.css">
+    <title>CSS</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Folhas de estilo CSS</h1>
+        <nav>
+            <ul>
+                <li class="menu"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="ordem">
+            <h2>Ordem de precedência</h2>
+            <p>1 - Css Inline</p>
+            <p>2 - Css Interno</p>
+            <p>3 - Css Externo</p>
+        </div>
+        
+
+        <div class="Seletores-e-Classes">
+            <h2>Seletores e Classes</h2>
+            <p>Seleciona o elemento html que voçê deseja estilizar.</p>
+            
+            <pre><code>
+                <b>1 -- Seletor Universal - Todas as tags dentro do Body terão o mesmo comportamento.</b>
+                *{
+                    Propriedades Css
+                } <br>
+                <b>2 - id -- </b>Apenas um elemento pode ter esse nome, Estiliza apenas aquele elemento <br>
+                No css é chamado com (<b>#</b>),<b> Assim: ( #nome_do_id { propriedades } ).</b>
+                <br>
+                <b>3 -- Classe --</b> Pode ter mais de uma classe com o mesmo nome, No css é chamado assim: <b>( .nome_da_Class { propriedades } ). <br>
+
+                <b>== Arquivo.HTML</b>
+                &lt;p class="vermelho fonte-30"&gt;
+                    Conteudo da Tag
+                &lt;/p&gt;
+                
+                <b>== Arquivo.CSS</b>
+                <b>Agrupar Seletores</b>
+                <b>
+                    h1, p {
+                        Propriedades css    
+                    }
+                </b>
+
+                <b>== ID</b>
+                <b>#fontsize{
+                    Propriedades css
+                }</b> <br>
+                
+                <b>== Class</b>
+                .vermelho{
+                    Propriedades css
+                }
+                <br>
+            </code></pre>
+        </div>
+
+        <!-- Color -->
+        <div class="ordem">
+            <h2> Cor do texto</h2>
+            <p>color: red;</p>
+        </div>
+
+
+        <!-- Background -->
+        <div class="ordem">
+            <h2> Background - Cor do fundo / Imagem de fundo</h2>
+            <h3>Cor do fundo</h3>
+            <p>Background-color:"red";</p>
+            <br>
+            <h3>Coloca Imagem de fundo</h3>
+            <p>background-image: url ("Local da imagem")</p>
+            <br>
+            <!-- Cover -->
+            <h3><b>Ajustes na imagem de fundo</b></h3>
+            <p>background-size:cover;</p>
+            <p>Se ajusta ao tamanho definido.</p>
+            <div class="backgroud-cover"></div>
+            <br>
+            <h3>Não repetir a imagem.</h3>
+            <p>background-repeat:no-repeat;</p>
+            <p>Usado junto com o background-size: contain;<br> O no-repet faz a imagem nao se repetir.</p>
+            <div class="backgroud-repeat"></div>
+            <br>
+            <h3>A imagem se repete para cima,baixo,lado</h3>
+            <p><b>background-size:contain; =></b> A imagem se repéti.</p>
+            <br>
+            <h3>Repetir a imagem ao lado</h3>
+            <p><b>background-repeat:repeat-x; =></b> Repeta a Imagem para o lado.
+            <div class="backgroud-repeat-ao-lado"></div>
+            <br>
+            <h3>Repetir a imagem para baixo</h3>
+            <p><b>background-repeat:repeat-y; =></b> Repeta a Imagem para baixo.</p>
+            <br>
+            <h3>se ajusta para cobrir todo o espaço do fundo</h3>
+            <p>background-size:cover;</p>
+            <br>
+            <h3>Area central da imagem na posiçao desejada</h3>
+            <p>background-position:top; ==> left, top, center, hight, bottom</p>
+        </div>
+
+
+        <!-- Border -->
+        <div class="ordem">
+            <h2>Border</h2>
+            <p>border: 5px solid black;</p>
+            <div class="div-Border-solid">border: solid</div>
+            <div class="div-Border-dotted">border: dotted -> Pontilhado</div>
+            <div class="div-Border-dashed">border: dashed -> Tracejado</div>
+            <div class="div-Border-double">border: double</div>
+            <div class="div-Border-groove">border: groove</div>
+            <div class="div-Border-ridge">border: ridge</div>
+            <div class="div-Border-inset">border: inset</div>
+            <div class="div-Border-outset">border: outset</div>
+            <div class="div-Border-hidden">border: hidden -> Oculta</div>
+            <div class="div-Border-none">border: none -> Nenhuma</div> <br>
+            <div>
+                Com lados Diferentes <br>
+                border-top: 7px solid red;<br>
+                border-left: 7px groove yellow;<br>
+                border-right: 7px double green;<br>
+                border-bottom: 7px dashed black;
+            </div> <br>
+            <div>
+                Borda Arredondada <br>
+                border: 7px solid blue;<br>
+                boder-radius: 30px; <br>
+                User: px ou %.
+            </div>
+        </div>
+
+
+        <!-- Margin e Padding e Border-->
+        <div class="ordem">
+            <h2>Border e Margin e Padding</h2>
+            <p>BORDER: largura, tipo e cor<br>border: 2px solid blue;</p>
+            <p><b>Borda canto redondo</b> <br> border-radius: 30px</p>
+            <br>
+            <p>Shorthand ==> Obrigatório seguir essa ordem: cima, direita, baixo, esquerda.<br>margin: 10px 20px 30px 40px; <br> padding: 5px 10px 15px 20px;</p>
+            <br>
+            <p>Ou usar individualmente cada lado.</p>
+            <p><b>Margin -</b> É o espaço fora do elemento(content) — Separa ele dos outros. Ex:<br> margin-top: 15px <br>margin-right: 15px <br>margin-bottom: 15px <br>margin-left: 15px</p>
+            <br>
+            <p><b>Padding -</b> É o espaço dentro do elemento(content) — Afasta o conteúdo das bordas internas. Ex:<br> padding-top: 15px <br>padding-right: 15px <br>padding-bottom: 15px <br>padding-left: 15px</p>
+            <img src="../IMG/html-css/margins_e_padding.png" width="500px" alt="imagem descreve margin e padding do css">
+        </div>
+
+
+        <!-- width right -->
+        <div class="ordem">
+            <br>
+            <h2>width(Largura) height(Altura)</h2>
+            <p>Largura - width:300px; <br> Altura - height: 300px</p>
+            <p>Largura máxima <br> max-width: 250px;</p>
+            <p>Largura minima <br> min-width:30px;</p>
+            <p>Altura máxima <br> max-height: 500px;</p>
+            <p>Altura minima <br> min-height:50px;</p>
+        </div>
+
+
+        <!-- Text - align-->
+        <div class="ordem">
+            <h2>Text-align</h2>
+            <p>text-align:center; ==> Centraliza o texto</p>
+            <p>text-align:end; ==> Alinha conforme o fim da escrita (ex: direita em português).</p>
+            <p>text-align:justify; ==> Alinha o texto nos dois lados, como em jornais.</p>
+            <p>text-align:justify-all; ==> Justifica todas as linhas, inclusive a última.</p>
+            <p>text-align:left; ==> Alinha o texto à esquerda.</p>
+            <p>text-align:right; ==> Alinha o texto à direita.</p>
+            <p>text-align:start; ==> Alinha conforme o início da escrita (ex: esquerda em português).</p>
+            <p>text-align:inherit; ==> Copia o valor de text-align do elemento pai (explicitamente).</p>
+            <p>text-align:initial; ==> Redefine a propriedade para o valor padrão do CSS, ou seja, como se nenhum text-align tivesse sido aplicado</p>
+            <p>text-align:unset; ==> Se o elemento normalmente herda text-align (como o texto em &lt;p&gt; ou &lt;div&GT;), ele volta a herdar do pai.</p>
+            <p>text-align:match-parent; ==> Faz o texto herdar o alinhamento horizontal do elemento pai, mas de forma explícita, ou seja, o navegador calcula o alinhamento com base no valor real aplicado ao pai (por exemplo, left, right, center etc.).</p>
+            <br>
+        </div>
+
+        
+        <div class="ordem">
+            <h2>Escrito de traz para frente</h2>
+            <p>direction:rtl; </p>
+            <p>Define que o texto será exibido da direita para a esquerda (Right-To-Left), usado em idiomas como árabe e hebraico.</p>
+            <br>
+            <h2>Inverte a palavra de traz para frente (usado junto com direction:rtl;)</h2>
+            <p>unicode-bibi: bidi-override;</p>
+            <p>Força a direção definida em direction:rtl, ignorando a ordem normal dos caracteres. <br>Ou seja, ele inverte a ordem de exibição dos caracteres de acordo com a direção escolhida no direction:rtl.</p><br>
+            <h2>texto riscado</h2>
+            <p>text-decoration:none; ==> Remove a linha debaixo dos links.</p>
+            <p>text-decoration: overline; ==> Coloca uma linha acima do texto.</p>
+            <p>text-decoration:line-through; ==> Texto riscado(Apagado).</p>
+            <p>text-decoration: underline; ==> texto sublinhado em baixo.</p><br>
+            <h2>Identaçao, maiuscula, minuscula, capitalizada </h2>
+            <p>text-transform: uppercase; ==> tudo em maiusculo.</p>
+            <p>text-transform: lowercase; ==> tudo em minusculo.</p>
+            <p>text-transform: capitalize; ==> Primeira letra de cada palavra em maiuscula.</p>
+            <p>text-indent: 50px; ==> Recua a primeira linha do texto(igual a um inicio de um paragrafo) </p><br>
+            <h2>Espassamentos</h2>
+            <p>letter-spacing: 5px; ==> Espassamento entre as letras.</p>
+            <p>line-height: 0.8; ==> Espassamento entre as linhas.</p>
+            <p>word-spacing: 15px ==> Espassamentos entre as palavras.</p>
+        </div>
+
+        <!-- Font -->
+        <div class="ordem">
+            <h2>Font</h2>
+            <p>font: italic bold 16px/1.5 "Arial", sans-serif;</p><br>
+            <h2>Propriedades font</h2>
+            <p>Font-size:15px; ==> Tamanho da fonte.</p><br>
+            <h2>Fonte style</h2>
+            <p>font-style: italic; ==> Fonte Italica.</p>
+            <p>font-style: oblique; ==> Mais inclinado que italic.</p>
+            <p>font-weight: bold; ==> Grossura da fonte.</p><br>
+            <h2>fonte externa</h2>
+            <a href="https://fonts.google.com/" target="_blank" rel="noopener">Google  --> Baixar fontes</a><br><br>
+            <p>1- No site do google fonts.</p>
+            <p>2- Escolha o tipo de fonte.</p>
+            <p>3- Clique no radio @import. Link copiado de ex: @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&display=swap');</p>
+            <p>4- Copie o link dentro do Style.</p>
+            <p>5- No arquivo Css importe a fonte colando o link Copiado.</p>
+            <p>6- No site do goole font , Em Css rules to specify families,Copie a familia de conte desejada.</p>
+            <p>7- Cole no css em font-family: fonte_Escolhida_Aqui;</p>
+        </div>
+
+        <!-- Estilizazção de links -->
+        <div class="ordem">
+            <h2>Estilizazção de links</h2> <br>
+            <a class="botao1" href="../index.html">Voltar para index</a><br><br>
+            <a class="botao2" href="../index.html">Voltar para index</a><br><br>
+            <a class="botao3" href="../index.html">Voltar para index</a><br><br>
+            <a class="botao4" href="../index.html">Voltar para index</a><br><br>
+            <a class="botao5" href="../index.html">Voltar para index</a>
+            <pre><code>
+                a.botao5 {
+                    // Muda o tipo do curso do mause ao passar por cima do botao.
+                    cursor: progress;
+                }
+            </code></pre>
+        </div>
+
+        <!-- Display -->
+        <div class="ordem">
+            <h2>Display - block</h2>
+            <p>Ocupa toda largura da pagina.</p>
+            <p>Tags que sao blocos:</p>
+            <p>&lt;h1/h6&gt;, &lt;form&gt;, &lt;div&gt;, &lt;p&gt;, &lt;header&gt;, &lt;section&gt;, &lt;footer&gt;</p><br>
+            <h2>Display - in line</h2>
+            <p>Cria um elemento que não ocupa toda a largura da pagina, apenas a largura do elemento, E fica na mesma linha.</p>
+            <h3>Propriedades não aceitas:</h3>
+            <p>width <br>
+            height <br>
+            margin-top <br>
+            margin-bottom <br>
+            padding-top <br>
+            padding-bottom <br>
+            vertical-align <br>
+            float <br>
+            clear <br>
+            overflow <br>
+            min-width <br>
+            max-widthbr
+            min-height <br>
+            max-height.</p>
+            <br>
+
+            <h3>Propriedades aceitas:</h3>
+            <p>color <br>
+            font- <br>
+            text- <br>
+            backgroun- <br>
+            boder(só com texto) <br>
+            padding-left <br>
+            padding-right <br>
+            margin-left <br>
+            margin-right.</p>
+            <br>
+            
+            <h3>Tags in line:</h3>
+            <a href="" class="inline">a (link)</a>
+            <img class="inline" src="" alt="imagem">
+        
+        </div>
+        
+        <div class="ordem">
+            <h2>Display - In line block</h2>
+            <p>Coloca um ao lado do outro e Aceita as propriedades Largura e Altura.</p>
+            <a href="" class="inlineblock">a (link)</a>
+            <span class="inlineblock">span</span>
+            <img class="inlineblock" src="" alt="imagem">
+            <br><br>
+
+            <h2>Remove o elemento na pagina.( Removendo o Elemento e o espaço ocupado por ele.)</h2>
+            <p>display:none;</p>
+            <br>
+
+            <h2>Oculta o elemento da pagina ( Remove o elemento, Porem mantem o espaço ocupado por ele nada na tela. )</h2>
+            <p>visibility: hidden;</p>
+        </div>
+
+        <!-- Propriedade Max-Width -->
+        <div class="ordem">
+            <br>
+            <h2>Largura maxima do elemento</h2>
+            <p>max-width:800px;</p>
+        </div>
+
+        <!-- Position -->
+        <div class="ordem">
+            <br>
+            <h2>Position: static;</h2>
+            <h3>position: static  -- Referente a posição padrão que foi criado.</h3>
+            <br>
+            <div class="positionStatic">
+                <div class="static1">class="static 1"</div>
+                <div class="static2">class="static 2"</div>
+                <div class="static3">class="static 3"</div>
+            </div>
+            <pre><code>
+                /* Position: static; */
+                .positionStatic {
+                    display: inline-block;
+                    background-color: blue;
+                    width: 100%;
+                    height: 150px;
+                }
+
+                .static1 {
+                    position: static;
+                    width: 30%;
+                    height: 100px;
+                    display: inline-block;
+                    background-color: yellow;
+                }
+
+                .static2 {
+                    position: static;
+                    width: 30%;
+                    height: 100px;
+                    display: inline-block;
+                    background-color: white;
+                }
+
+                .static3 {
+                    position: static;
+                    width: 30%;
+                    height: 100px;
+                    display: inline-block;
+                    background-color: red;
+                }
+            </code></pre>
+            <br>
+            <hr>
+
+            <!-- Relative -->
+             <br>
+            <h2>Position: relative;</h2>
+            <h3>position: relative;  -- Ele continua ocupando o mesmo espaço <br>Mas você pode reposiciona-lo usando as propriedades:<br> top <br>left <br>right <br>bottom.</h3>
+            <br>
+
+            <h2>Elemento fica na frente ou atraz.</h2>
+            <p>OBS: Só funcina se na class estiver o position: relative; junto.</p>
+            <p>Pode ser de um numero negativo ate 9999.</p><br>
+            <p>z-index: -1; -- A div Amarela fica atraz da div Azul.</p>
+            <p>z-index: 2; -- A div Amarela fica na frente da div Azul</p>
+            <br>
+            <div class="positionrelative">
+                <div class="relative1">class="relative 1"</div>
+                <div class="relative2">class="relative 2"</div>
+                <div class="relative3">class="relative 3"</div>
+                <p style="padding: 18px 0px 0px 30px; color: black;"> OBS:( A class="relative1" de cor Amarelo ) esta atraz da ( class="positionrelative" de cor Azul ) .</p>
+            </div>
+            <pre><code>
+                .positionrelative {
+                    display: inline-block;
+                    background-color: blue;
+                    width: 100%;
+                    height: 150px;
+                }
+
+                .relative1 {
+                    position: relative;
+                    left: 60px;
+                    width: 30%;
+                    height: 100px;
+                    display: inline-block;
+                    background-color: yellow;
+                    z-index: -1;
+                }
+            </code></pre>
+            <hr>
+        </div>
+
+        <!-- Position fixed -->
+        <div class="ordem">
+            <br>
+            <h2>Position: fixed;</h2>
+            <p>fixed -- Deixa o elemento fixo na tela idepedente da rolagem do scrow.<br>
+            Posicione o elemento com: top, right, bottom,left. 
+            </p><br>
+            
+            <pre><code>
+                &lt;div class="positionFixed"&gt; Position: fixed; &lt;/div&gt;
+
+                .positionFixed {
+                    background-color: green;
+                    color: white;
+                    width: 80px;
+                    height: 80px;
+                    padding: 13px;
+                    
+                    /* Mantem o elemento sem sair do lugar. */
+                    position: fixed;
+                    
+                    /* Posiçao do elemento na tela. */
+                    bottom: 7px;
+                    
+                    /* Posiçao do elemento na tela. */
+                    right: 1330px;
+                }
+            </code></pre>
+        </div>
+
+        <!-- Position absolute -->
+        <div class="ordem">
+            <br>
+            <h2>Position absolute</h2>
+            <p>É a posiçao do elemento em relacao ao Pai.</p>
+            <p>OBS: ==> O container pai tem que estar com -- position: relative; ==> Para o position: absolute; funcionar.</p>
+            <p>Posicione o elemento com: top, right, bottom, left.</p>
+            <br>
+            <div class="div_Pai_Absolute">
+                <div class="div_filho_Absolute">Position: Absolute;</div>
+            </div>
+            
+            <pre><code>
+                &lt;div class="div_Pai_Absolute"&gt;
+                    &lt;div class="div_filho_Absolute">Position: Absolute;&lt;/div&gt;
+                &lt;/div&gt;
+
+
+                /* Position absolute */
+                .div_Pai_Absolute {
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                }
+
+                .div_filho_Absolute {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    background-color: yellow;
+                    top: 15px;
+                    left: 30px;
+                }
+            </code></pre>
+        </div>
+
+
+        <!-- position: sticky; -->
+        <div class="ordem">
+            <br>
+            <h2>position: sticky; (pegajoso, grudento)</h2>
+            <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">www.w3schools.com (Material de apoio )</a>
+            <br><br>
+            <p>Mantem o elemento na tela durante a rolagem com o scrow dentro do elemento pai.</p>
+            <p>EX: Menu ou imagem que fica fixa ao rolar a tela.</p>
+            <p>Posicione o elemento com: top, right, bottom, left.</p>
+            <br>
+            <div class="div_Pai_sticky">
+                <div class="div_filho_sticky">Position: sticky;</div>
+            </div>
+            <br><br>
+            <pre><code>
+                &lt;div class="div_Pai_sticky"&gt;
+                    &lt;div class="div_filho_sticky"&gt;Position: sticky;&lt;/div&gt;
+                &lt;/div&gt;
+
+
+                /* Position sticky */
+                .div_Pai_sticky {
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                }
+
+
+
+                .div_filho_sticky {
+                    position: sticky;
+                    top:0;
+                    padding: 20px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: yellow;
+                }
+            </code></pre>
+        </div>
+
+
+        <!-- Propriedade Overflow -->
+        <div class="ordem">
+            <br>
+            <h2>Overflow</h2>
+            <p>Controla o que acontece quando o conteúdo passa do tamanho da caixa (div).</p>
+            <br>
+            <h2>Remover barra de rolagem da vertical.</h2>
+            <p><mark>overflow-y: hidden;</mark></p>
+            <br>
+
+            <h2>Remover barra de rolagem da horizontal.</h2>
+            <p><mark>overflow-x: hidden;</mark></p>
+            <br>
+
+            <h3>Parametros do Overflow</h3>
+            
+            <h2>auto</h2>
+            <p>Mostra barra do scroll, só se haver nescessidade de mostrar todo conteudo completo, ja que o conteudo é menor que o elemento pai (div)..</p>
+            <p>Esse auto, só aparece se for especificado uma autura para o elemento.</p>
+            <div class="overflow_auto">
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+            </div>
+            <br>
+
+            <h2>hidden</h2>
+            <p>Mostra só o que cabe dentro do elemento pai (div), Corta (não mostra) o conteudo que passa para fora.</p>
+            <div class="overflow_hidden">
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+            </div>
+            <br>
+
+            <h2>scroll</h2>
+            <p>Mostra barra de rolagem para ver todo o conteudo que tem dentro, Mesmo o que nao é mostrado porque excede o limite de tamanho do elemento pai (div).</p>
+            <div class="overflow_scroll">
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+            </div>
+            <br>
+
+            <h2>visible</h2>
+            <p>Mostra o conteudo, Mesmo que ele saia para fora do elemento pai (div). (padrão)</p>
+            <div class="overflow_visible">
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
+            </div>
+        </div>
+
+
+        <!-- Float -->
+        <div class="ordem">
+            <br>
+            <h2>Float</h2>
+
+            <p>Faz o elemento flutuar se despredendo do container pai.<br>
+                Podendo escolher uma posiçao para o elemento ficar, direita, esquerda.<br>
+                Faz o texto contornar uma imagem.
+            </p>
+            <br>
+
+            <p>No elemento dentro do container ==> style="clear:both" ==> Faz a float não valer, fazendo o texto pular o contorno na imagem.</p>
+            <br>
+            
+            <div class="float_pai">
+                <img src="../IMG/html-css/Carro azul.jpg" alt="carro azul" width="250" height="400">
+                <br>
+                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>4-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>5-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <!-- style="clear:both" -- Se colocar no h3 ele quebra o efeito do float. -->
+                <h3>Outro Titulo</h3>
+                <p>6-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>7-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>8-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p><br>
+
+                <p>9-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
+                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
+                    Nulla rerum soluta vitae dolore.
+                </p>
+
+                <pre><code>
+                    Obs: Se o <mark>&lt;h3 style="clear:both"&gt; Outro Titulo &lt;/h3&gt;</mark> ==> Estivece dessa forma o efeito float seria aliminado <br>
+                    E o &lt;h3&gt; começaria abaixo da imagem ficando um espasso em branco entre o paragrafo 5-lorem e o &lt;h3&gt;Outro Titulo&lt;\h3&gt;.
+
+                    /* Float */
+                    .float_pai {
+                        border: 2px solid black;
+                        overflow: auto;
+                        position: relative;
+                    }
+
+                    .float_pai img{
+                        float: left;
+                        margin-right: 20px;
+                        margin-bottom: 10px;
+                    }
+                </code></pre>
+            </div>
+        </div>
+
+
+        <!-- Opacity - Transparencia-->
+        <div class="ordem">
+            <br>
+            <h2>Opacity - Transparencia</h2>
+            <p>opacity:__;</p>
+            <p>Valores de: ( 0.0 até 1.0 ) Sendo 0.1 igual a 10% de transparencia.</p>
+            <a href="https://picsum.photos/" target="_blank" rel="noopener">Site Lorem Picsum -- Busca imagem para teste de tamanhos.</a>
+            <br>
+            <img src="https://picsum.photos/id/234/200/200" alt="torre1" class="opacity_1">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre2" class="opacity_2">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre3" class="opacity_3">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre4" class="opacity_4"> 
+            <img src="https://picsum.photos/id/234/200/200" alt="torre5" class="opacity_5">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre6" class="opacity_6">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre7" class="opacity_7">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre8" class="opacity_8">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre9" class="opacity_9">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre10" class="opacity_10">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre11" class="opacity_11">
+            <img src="https://picsum.photos/id/234/200/200" alt="torre12" class="opacity_12">
+        </div>
+
+        <!-- Efeito Dropdown -->
+        <div class="ordem">
+            <br>
+            <h2>Efeito Dropdown</h2>
+            <p>Abre um quadradinho com mais opções para selecionar. </p>
+            <ul>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#">Efeito Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                        <a href="#">Link</a>
+                    </div>
+                </li>
+            </ul>
+            <pre><code>
+                HTML:
+                &lt;ul&gt;
+                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
+                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
+                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
+                    &lt;li class="dropdown"&gt;
+                        &lt;a&gt; class="dropbtn" href="#"&gt; Efeito Dropdown &lt;/a&gt;
+                        &lt;div class="dropdown-content"&gt;
+                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
+                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
+                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
+                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                CSS:
+                /* Efeito Dropdown */
+
+                ul {
+                    background-color: black;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+                }
+
+
+                li {
+                    float:left;
+                }
+
+
+                li a, .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+
+
+                li a:hover, .dropdown:hover .dropbtn {
+                    background-color: red;
+                }
+
+
+                li.dropdown {
+                    display: inline-block;
+                }
+
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    width: 150px;
+                }
+
+
+                .dropdown-content a{
+                    color: black;
+                    display: block;
+                    text-align: left;
+                    border: 1px solid rgb(207, 207, 207);
+                }
+
+
+                .dropdown-content a:hover {
+                    color:rgb(145, 2, 2);
+                    background-color:rgb(238, 238, 97);
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </code></pre>
+        </div>
+                
+        <!--  Especificidade CS -->
+        <div class="ordem">
+            <br>
+            <h2> Especificidade CS</h2>
+            <br>
+            <p>Ordem de precedencia que o navegador prioriza executar:</p>
+            <p>
+                1 - style inline <br>
+                2 - #id<br>
+                3 - tag.classe<br>
+                4 - .class<br> 
+                5 - Tags
+            </p>
+            <p>No caso de voçê multiplos seletores igual o ultimo será mostrado na tela. <br>
+                h1{background:red;} <br>
+                h1{background:green;} <br>
+                h1{background:blue;} --> Esse será o mostrado na tela
+            </p>
+        </div>
+                
+        <!-- Regra Important -->
+        <div class="ordem">
+            <br>
+            <h2>Regra Important</h2>
+            <br>
+            <p>! important ==> Ignora os parametros de precedencia mais forte executando esse que tem o important.</p>
+            <pre><code>
+                #meuid {
+                    color:red;
+                }
+
+                .minhaClasse {
+                    color: blue;
+                }
+
+                h1 {
+                    color: green; !important
+                }
+            </code></pre>
+            <p>O certo seria primeiro o: <br>
+                1-id <br>
+                2-class <br>
+                3-h1 sendo o ultimo <br>
+                Mas usando a regra !important o h1 seria mostrado como se foce a prioridade <br>
+                Ignorando a regra de prioridade dos outros.</p>
+        </div>
+
+        <!-- Gradiente -->
+        <div class="ordem">
+            <br>
+            <h2>Gradiente</h2>
+            <br>
+            <p>background-image: linear-gradient(blue, red);</p>
+            <div class="gradiente1"></div>
+            <br>
+
+            <h3>Indicar direção especifica</h3>
+            <p>background-image: linear-gradient(to right,  red, orange, yellow, green, blue, indigo, violet);</p>
+            <div class="gradiente2"></div>
+            <br>
+
+            <h3>Gradiente na diagonal</h3>
+            <p>background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);</p>
+            <div class="gradiente3"></div>
+            <br>
+
+            <h3>Gradiente com grau</h3>
+            <p>background-image: linear-gradient(170deg, red, orange, yellow, green, blue, indigo, violet);</p>
+            <div class="gradiente4"></div>
+            <br>
+
+            <h3>Gradiente em forma de circulo</h3>
+            <p>==> Pode ser usado tambem (Porcentagem%) ex: yellow 5%, blue 15%,.</p>
+            <p>background-image: radial-gradient(yellow, blue, indigo, violet);</p>
+            <div class="gradiente5"></div>
+        </div>
+
+        <!-- Text Shadow e Box Shadow -->
+        <div class="ordem">
+            <br>
+            <h2>Text Shadow</h2>
+            <p>Legenda ==> text-shadow: 2px Direita | 2px Baixo | 10px (Blur-Disfoque) | Cor;</p>
+            <br>
+
+            <h2 class="text-shadow1-Simples">Sombra simples com Text Shadom</h2>
+            <p>text-shadow: 2px 2px 10px red;</p>
+            <br>
+
+            <h2 class="text-shadow2-Efeito">Efeito</h2>
+            <p>text-shadow: 1.5px 1.5px 2px black;</p>
+            <br>
+
+            <h2 class="text-shadow3-multiplas-Sombras">Multiplas Sombras</h2>
+            <p>text-shadow: 6px 5px white, 15px 10px 0.3px  blue, 26px 13px 0.3px red;</p>
+            <br><br>
+
+            <h2>Box Shadow</h2>
+            <div class="box-shadow"></div>
+            <br>
+        
+        </div>
+        
+        <div class="ordem">
+            <h2>Efeito card</h2>
+            <div class="efeito-Card"></div>
+            <p>
+                Valor padrao usado em card ==>
+                border: 0.1px solid rgb(190, 187, 187); | 
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            </p>
+            
+            <br>
+            <hr>
+        </div>
+
+        <!-- Efeitos de Texto em card-->
+        <div class="ordem">
+            <br>
+            <h2>Efeitos de Texto em card</h2>
+            <br>
+
+            <div class="caixa normal">
+                <strong>white-space: normal;</strong><br><br>
+                Este texto quebra a linha normalmente quando chega ao final da caixa.
+            </div>
+
+            <div class="caixa nowrap">
+                <strong>white-space: nowrap;</strong><br><br>
+                Este texto não quebra a linha e continua na mesma linha mesmo que ultrapasse a borda da caixa.
+            </div>
+
+            <div class="caixa ellipsis">
+                <strong>text-overflow: ellipsis;</strong><br><br>
+                Este texto é muito longo e vai mostrar reticências...
+            </div>
+
+            <div class="caixa auto">
+                <strong>height: auto;</strong><br><br>
+                A altura desta caixa se ajusta automaticamente ao tamanho do texto.
+            </div>
+
+            <div class="overflow-hidden">
+                <strong>overflow: hidden;</strong> <br><br>
+                Este texto é muito longo e vai ser cortado porque a caixa é pequena.
+            </div>
+
+            <h3>Exemplo do que da para fazer com essas propriedades:</h3>
+            
+            <div class="efeito-texto-em-card">
+                <img src="../IMG/html-css/areia.jpeg" alt="areia" width="100%" height="50%">
+                <h2 class="reduzido">Isso é um card exemplo de titulo muito long!</h2>
+                <p class="reduzido">Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card
+                    Oi tudo isso é um card</p>
+            </div>
+
+            <pre><code>
+                <br>
+                Código html
+                &lt;div class="efeito-texto-em-card"&gt;
+                    &lt;img src="../img/areia.jpeg" alt="areia" width="100%" height="50%"&gt;
+                    &lt;h2 class="reduzido">Isso é um card exemplo de titulo muito long!&gt;/h2&gt;
+                    &lt;p class="reduzido">Oi tudo isso é um card&gt;/p&gt;
+                &lt;/div&gt;
+                <br>
+                Código CSS
+                .efeito-texto-em-card{
+                    width: 18%;
+                    height: auto;
+                    box-shadow: 0 4px 8px 0 black;
+                }
+
+                .reduzido{
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding-bottom: 30px;
+                }
+
+                .efeito-texto-em-card:hover .reduzido{
+                    white-space: normal;
+                }
+
+            </code></pre>
+        </div>
+
+        <!-- Media Queries  class="Media-Queries"-->
+        <div class="ordem">
+            <br>
+            <h2>Media Queries</h2><br>
+            <h3>Os tamanhos de telas</h3><br>
+            <p>
+                Smartphones (600px para baixo) <br>
+                @media only screen and (max-width: 600px) {O que vai acontecer informe os parametros}
+                <br><br>
+
+                Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) <br>
+                @media only screen and (min-width: 600px) {O que vai acontecer informe os parametros}
+                <br><br>
+                Dispostivos Médios (Tablets deitados, 768px para cima) <br>
+                @media only screen and (min-width: 768px) {O que vai acontecer informe os parametros}
+                <br><br>
+                Dispostivos Largos (laptops/desktops, 992px para cima) <br>
+                @media only screen and (min-width: 992px) {O que vai acontecer informe os parametros}
+                <br><br>
+                Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) <br>
+                @media only screen and (min-width: 1200px) {O que vai acontecer informe os parametros}
+            </p>
+            <p></p>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

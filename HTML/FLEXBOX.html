@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/FLEXBOX.css">
+    <title>FLEXBOX</title>
+</head>
+<body>
+
+    <header>
+        <h1>FLEXBOX</h1>
+        <nav>
+            <ul>
+                <li class="menu"></li>><a href="../../index.html">Home</a></li>
+                <li class="menu"></li>><a href="https://www.youtube.com/watch?v=Z4CbaGCEsTY&t=9s" target="_blank">Larissa Kich</a></li>
+                <li class="menu"></li>><a href="https://www.youtube.com/watch?v=NvnJRLTG_5Y&t=401s" target="_blank">Fernanda Kipper</a></li>
+                <li class="menu"></li>><a href="https://www.youtube.com/watch?v=KbjLtEgmZ_E" target="_blank">Rafaella B aula-1</a></li>
+                <li class="menu"></li>><a href="https://www.youtube.com/watch?v=hjz6ezV9_uc" target="_blank">Rafaella B aula-2</a></li>
+                <li class="menu"></li>><a href="https://triangulo.dev/posts/guia-completo-flexbox/" target="_blank">Flexbox</a></li>
+                <li class="menu"></li>><a href="https://www.samanthaming.com/flexbox30/1-flexbox-intro/" target="_blank">Flexbox</a></li>
+                <li class="menu"></li>><a href="https://blog.betrybe.com/css/css-flexbox/" target="_blank">Blog.betrybe</a></li>
+                <li class="menu"></li>><a href="https://www.samanthaming.com/flexbox30/20-order/" target="_blank">Itens filhos</a></li>
+                <li class="menu"></li>><a href="https://www.youtube.com/watch?v=SAl0i5rzX3U&list=PLYgzkrmJnLwo8IDD2v7RP_oyE3yzc1fY4" target="_blank">Canal-DPW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h2>Container <br> Elemento Pai</h2>
+        <p>Essas propriedades controlam como os filhos se organizam dentro do contêiner.</p>
+        <h2>display: flex;</h2>
+        <p>Ativa o Flexbox no container.</p>
+
+        <h2>flex-direction</h2>
+        <h3>Define a direção dos itens na horizontal indo da esquerda para direita</h3>
+        <p>flex-direction: row;</p>
+        <img src="../IMG/Row.png" alt="flex-direction: row;">
+
+        <h3>Define a direção dos itens na horizontal indo da direita para esquerda</h3>
+        <p>flex-direction: row-reverse;</p>
+        <img src="../IMG/row-Reverse.png" alt="flex-direction: row-reverse;">
+
+        <h3>Define a direção dos itens na vertical indo de cima para baixo</h3>
+        <p>flex-direction: column;</p>
+        <img src="../IMG/Column.png" alt="flex-direction: column;">
+
+        <h3>Define a direção dos itens na vertical indo de baixo para cima</h3>
+        <p>flex-direction: column-reverse;</p>
+        <img src="../IMG/Column-Reverse.png" alt="flex-direction: column-reverse;">
+
+
+
+        <h2>justify-content</h2>
+        <h3>Coloca todos os elementos dentro do Container agrupados do lado Esquerdo</h3>
+        <p>justify-content: flex-start;</p>
+        <img src="../IMG/justify-content--flex-start.png" alt="justify-content: flex-start;">
+        
+        <h3>Coloca todos os elementos dentro do Container agrupados do lado Direito</h3>
+        <p>justify-content: flex-end;</p>
+        <img src="../IMG/justify-content --flex-end.png" alt="justify-content: flex-end;">
+
+        <h3>Agrupa os elementos no centro do eixo principal</h3>
+        <p>justify-content: center;</p>
+        <img src="../IMG/justify-content --Center.png" alt="justify-content: center;">
+
+        <h3>justify-content: space-between;</h3>
+        <h3>Espaços entre os elementos ao longo do exio principal</h3>
+        <p>Colocando o primeiro elemento no inicio do eixo. <br>
+        <p>justify-content: space-between;</p>
+        <img src="../IMG/justify-content --space-between.png" alt="justify-content: space-between;">
+
+        <h3>Ao Redor, Distribui os elementos ao longo do exio principal com espaço no inicio e fim</h3>
+        <p>justify-content: space-around;</p>
+        <img src="../IMG/justify-content --space-around.png" alt="justify-content: space-around;">
+
+
+
+        <h2>align-items</h2>
+        <h3>Ocupa todo o espaço disponivel, stretch(Esticar)</h3>
+        <p>Se não tiver uma altura pré definida irá ocupar o espaço todo.</p>
+        <p>align-items: stretch;</p>
+        <img src="../IMG/align-items --Stretch.png" alt="align-items: stretch;">
+
+
+
+        <h2>flex-wrap (enrolar)</h2>
+        <p>==> Controla se os elementos quebram a linha</p>
+
+        <h3>Tenta colocar tudo na mesma linha ao atigir a largura maxima sem brebrar a linha.</h3>
+        <p>flex-wrap: nowrap;</p>
+        <img src="../IMG/nowrap.png" alt="flex-wrap: nowrap;">
+
+        <h3>Se não couber os elementos na largura maxima, Irá quebrar a linha, Colocando os demais elementos na  linha de baixo.</h3>
+        <p>flex-wrap: wrap;</p>
+        <img src="../IMG/wrap.png" alt="flex-wrap: wrap;">
+
+        <h3>Quebra de linha ao atigir a largura maxima, Colocando os demais elementos na linha de Cima.</h3>
+        <p>flex-wrap: wrap-reverse;</p>
+        <img src="../IMG/wrap-reverse.png" alt="flex-wrap: wrap-reverse;">
+        
+
+
+        <h2>flex-flow (fluxo flexível)</h2>
+        <p>Atalho para flex-direction + flex-wrap.</p>
+
+        <h3>justify-content</h3>
+        <p>Alinha itens horizontalmente (eixo principal)</p>
+        <p>flex-start, flex-end, center, space-between, space-around, space-evenly.</p>
+
+        <h3>align-items</h3>
+        <p>Alinha itens verticalmente (eixo cruzado)</p>
+        <p>flex-start, flex-end, center, baseline, stretch</p>
+
+        <h3>align-content</h3>
+        <p>Alinha várias linhas de itens (quando há quebra de linha).</p>
+        <p>flex-start, flex-end, center, space-between, space-around, stretch</p>
+
+
+
+        <h2>align-content</h2>
+        <h3>Posiciona o conteudo em Cima</h3>
+        <p>align-content: flex-start;</p>
+        <img src="../IMG/align-content --flex-start.png" alt="align-content: flex-start;">
+
+        <h3>Posiciona o conteudo no Meio</h3>
+        <p>align-content: center;</p>
+        <img src="../IMG/align-content --Center.png" alt="align-content: center;">
+
+        <h3>Posiciona o conteudo a Baixo</h3>
+        <p>align-content: flex-end;</p>
+        <img src="../IMG/align-content --flex-End.png" alt="align-content: flex-end;">
+
+        <h3>Deixa um espaço no Meio entre o conteudo</h3>
+        <p>align-content: space-between;</p>
+        <img src="../IMG/align-content --Space-between.png" alt="align-content: space-between;">
+
+        <h3>Coloca uma margim ente o conteudo antes, meio, fim</h3>
+        <p>align-content: space-around;</p>
+        <img src="../IMG/align-content --space-Around.png" alt="align-content: space-around;">
+
+        <h2>gap</h2>
+        <p>==> Define o espaçamento entre itens sem precisar de margin</p>
+        <h3>gap</h3>
+        <p>gap: Distância-Entre-Linhas e Distância-Entre-Coluna: px;</p>
+        <p>gap: 20px;</p>
+        <p>gap: 10px 30px;</p>
+
+        <h2>row-gap e column-gap</h2>
+
+        <h3>Distancia entre as linhas</h3>
+        <p>row-gap: 10px;</p>
+
+        <h3>Distancia entre as colunas</h3>
+        <p>column-gap: 30px;</p>
+        
+        <h2>Itens <br> Elementos filhos</h2>
+        <p>Essas propriedades controlam o comportamento individual de cada item dentro do container.</p>
+        
+        <h3>order</h3>
+        <p>Muda a ordem de exibição dos itens ( número menor aparece primeiro ).</p>
+        <pre><code>
+            .child {
+                order: 0       /* default */
+                  or   number
+            }
+        </code></pre>
+        <img src="../IMG/Itens-filhos-order.avif" alt="Itens-filhos-order">
+        <img src="../IMG/filho -- order.png" alt="Itens-elementos-filhos-order">
+        
+        <h3>flex-grow -- Esticar/Crescer</h3>
+        <p>OBS: Por ser unidade de proporção não é aceito valores Negativos</p>
+        <p>Define quanto o item cresce para ocupar espaço livre ( 0 = não cresce, 1 ou mais = cresce ).</p>
+        <img src="../IMG/Itens-filhos-flex-grow.avif" alt="Itens-filhos-flex-grow">
+        <img src="../IMG/filho -- flex-grow.png" alt="Itens-elementos-filhos-flex-grow">
+        
+        <h3>flex-shrink -Encolher</h3>
+        <p>OBS: Por ser unidade de proporção não é aceito valores Negativos</p>
+        <p>Define a capacidaded do item de se Encolher se faltar espaço ( 0 = não encolhe, 1 = padrão ).</p>
+        <img src="../IMG/Itens-filhos-flex-shrink.avif" width="1300px" alt="Itens-filhos-flex-shrink">
+        <img src="../IMG/filho -- flex-shrink.png" alt="Itens-elementos-filhos-flex-shrink">
+
+        <h3>flex-basis</h3>
+        <p>Define o tamanho inicial do item antes de crescer ou encolher ( pode usar px, %, etc.) valor padrão é auto.</p>
+        <p>Obs: Aqui você pode ver claramente que, quando um item tem uma base flexível e uma largura, o navegador sempre usará o valor definido com flex-basis.</p>
+        <p>Mais uma vez, mais um motivo para usar o método flex correto</p>
+        <p>Mas cuidado se você também definir uma largura mínima e máxima. Nesses casos, a base flexível perderá valor e não será usada como largura.</p>
+        <pre><code>
+            .child {
+                flex-basis: auto      /* default */
+                        or  width
+            }
+        </code></pre>
+        <img src="../IMG/Itens-filhos-flex-basis.avif" alt="flx-basic-2">
+        <img src="../IMG/filho -- flex-basis.png" alt="Itens-filhos-flex-basis">
+
+        <h3>flex</h3>
+        <p>Atalho para flex-grow flex-shrink flex-basis, Ex: flex: 1 0 100px;</p>
+        <p>OBS: Respeite a ordem 1-flex-grow 2-flex-shrink 3-flex-basis</p>
+        <pre><code>
+            .child {
+                flex:  grow        shrink        basis
+                flex:    0            1           auto
+
+                   or flex-grow   flex-shrink   flex-basis
+                   or flex-grow
+                   or flex-basis
+                   or flex-grow   flex-basis
+                   or flex-grow   flex-shrink
+            }
+        </code></pre>
+        <img src="../IMG/Itens-filhos-align-self.avif" width="500px" height="500px" alt="Itens-elementos-filhos-flex">
+
+        <h3>align-self - Sozinho</h3>
+        <p>Permite alinhar individualmente um item diferente dos outros.( mesmos valores de align-items ).</p>
+        <pre><code>
+            .child-1 {
+                align-self: stretch;
+                        or  flex-start;
+                        or  flex-end;
+                        or  center;
+                        or  baseline;
+            }
+        </code></pre>
+        <img src="../../IMG/Itens-filhos-align-self.avif" width="400px" height="400px" alt="Itens-elementos-filhos-align-self">
+
+        <h2>Selecionar apenas um elemento da lista</h2>
+        <p>para nao usar class pode ser usado um pseudo-selector no css <br>.container div:nth-child( numero-do-elemento )</p>
+        
+        <h2>Alinhar elementos individualmente</h2>
+        <h3>Alinha apenas um unico elemento</h3>
+        <p>align-self: end; ou start ou center</p>
+
+        <h3>Reordenar a ordem dos elementos</h3>
+        <p>Obs:Se for mover todos os elementos Tem que colocar o order em todos os elementos disponiveis.</p>
+        <p>OBS: Se for mover só um elemento tem que colocar o order no elemento a ser movido e colocar order na container div que controoa todos os elementos juntos.</p>
+        <p>order:1;</p>
+
+
+    </main>
+
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

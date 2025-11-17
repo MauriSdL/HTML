@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/TABELAS.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tabelas</h1>
+        <nav>
+            <ul>
+                <li class="menu"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Propiedade da Tabelas</h2>
+        <div class="propriedades-Tabela">
+            <p class="paragrado"><b>table</b> - Cria a tabela</p>
+            <p class="paragrado"><b>tr</b> - Cria cada linha</p>
+            <p class="paragrado"><b>th</b> - Titulo de cada Coluna</p>
+            <p class="paragrado"><b>td</b> - Informaçoes de cada linha</p>
+        </div>
+        
+        <div class="tabela-container">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Peso</th>
+                    <th>Linguagem</th>
+                </tr>
+                <tr>
+                    <td>Dimitri</td>
+                    <td>30</td>
+                    <td>85</td>
+                    <td>html</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>34</td>
+                    <td>95</td>
+                    <td>css</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="codigo-html-css-container">
+            <div class="codigoHTML">
+            <h2>Código html</h2>
+            <pre><code>
+                &lt;table border="1"&gt;
+                // Nome das Colunas
+                &lt;tr&gt;
+                &lt;th&gt;Nome&lt;/th&gt;
+                &lt;th&gt;Idade&lt;/th&gt;
+                &lt;th&gt;Peso&lt;/th&gt;
+                        &lt;th&gt;Linguagem&lt;/th&gt;
+                    &lt;/tr&gt;
+                    
+                    // Linha 1        
+                    &lt;tr&gt;
+                    &lt;td&gt;Dimitri&lt;/td&gt;
+                    &lt;td&gt;30&lt;/td&gt;
+                    &lt;td&gt;85&lt;/td&gt;
+                    &lt;td&gt;html&lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                    // Linha 2
+                    &lt;tr&gt;
+                    &lt;td&gt;João&lt;/td&gt;
+                    &lt;td&gt;34&lt;/td&gt;
+                    &lt;td&gt;95&lt;/td&gt;
+                    &lt;td&gt;css&lt;/td&gt;
+                    &lt;/tr&gt;                
+                    &lt;/table&gt;
+                </code></pre>
+        </div>
+            
+        <div class="codigoCSS">
+                <h2>Código CSS</h2>
+                <pre><code>
+                    &lt;style&gt;                    
+                    table {
+                        width: 100%;
+                        border: 1px solid black;    // Borda da tabela
+                        border-collapse: collapse;  // Junta as bordas
+                        text-align: center;         // Centraliza texto
+                    }
+                    
+                    th, td {
+                        border: 1px solid black;   // borda das células
+                        padding: 5px;              // espaço interno
+                    }
+                    &lt;/style&gt;
+                </code></pre>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+* {
+    margin: opx;
+}
+
+.section {
+    width: 100%;
+}
+    
+.baixoVoltarPaginaPrincipal {
+    margin: 0px;
+    width: 400px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    background-color:chartreuse;
+    text-decoration: none;
+    border-color:5px black;
+}
+
+.baixoVoltarPaginaPrincipal:hover  {
+    background-color: aqua;
+    border-color: 5px black; 
+}

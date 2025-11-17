@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/FORMULARIO.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Formulario</h1>
+        <nav class="nav">
+            <ul>
+                <li class="menu"><a href="../index.html">Home</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <h2>get e post</h2>
+            <p><b>method="get" -- </b>Os dados são enviados na URL, após um Exemplo: 👉 /buscar?q=notebooks</p>
+            <br>
+            <pre><code>&lt;form action="/buscar" method="get"&gt;&lt;/form&gt;</code></pre>
+            <br>
+            <h4>Caracteristicas</h4>
+            <p>Visível na URL -- Os dados aparecem na barra de endereços.</p>
+            <p>Pode ser compartilhado -- Útil para buscas, filtros, links.</p>
+            <p>Menos seguro -- As informações ficam expostas (nunca use para senhas, dados pessoais).</p>
+            <p>Mais rápido -- Usado para requisições simples (não altera o servidor).</p>
+            <p>Limite de tamanho -- A URL não pode ultrapassar cerca de 2000 caracteres.</p>
+            <h4>Usado em:</h4>
+            <p>Páginas de busca (Google, YouTube, etc.)</p>
+            <p>Filtros de produtos</p>
+            <p>Navegação entre páginas com parâmetros</p>
+            
+            <img src="../IMG/Get-Post.png" alt="get e post">            
+            
+            <p><b>method="post" -- </b>Os dados são enviados no corpo (body) da requisição HTTP, não aparecem na URL.</p>
+            <br>
+            <pre><code>&lt;form action="/enviar" method="post"&gt;&lt;/form&gt;</code></pre>
+            <br>
+            <h4>Caracteristicas</h4>
+            <p>Mais seguro -- Dados não ficam visíveis na barra de endereços.</p>
+            <p>Sem limite de tamanho -- Ideal para formulários longos ou com arquivos.</p>
+            <p>Pode modificar dados no servidor -- Usado para cadastro, login, envio de arquivos etc.</p>
+            <p>Não pode ser compartilhado como link -- O conteúdo não aparece na URL.</p>
+            <br>
+            <h4>Usado em:</h4>
+            <p>Login, cadastro, envio de mensagens</p>
+            <p>Upload de arquivos</p>
+            <p>Alteração de informações no banco de dados</p>
+            <br><br>
+            <hr>
+
+            <!-- Type input -->
+            <h2>Label, input, submit</h2>
+            <label for="campo_nome">Nome:</label>
+            <input id="campo_nome" type="text" placeholder="Digite  seu nome" required> <br><br>
+            <label for="campo_Email">E-mail:</label>
+            <input id="campo_Email" type="email" placeholder="E-mail" required><br><br>
+            <label for="campo_Senha">Senha:</label>
+            <input id="campo_Senha" type="password" placeholder="Senha" required><br><br>
+            <input type="submit" value="Enviar">
+            <br><br>
+
+            <h2 class="atributos">Código fonte</h2>
+            <pre><code>
+                &lt;label for="campo_nome"&gt; Nome: &lt;/label&gt;
+                &lt;input id="campo_nome" type="text" placeholder="Digite  seu nome" required&gt;
+
+                &lt;label for="campo_Email"&gt; E-mail: &lt;/label&gt;  
+                &lt;input id="campo_Email" type="email" placeholder="E-mail" required&gt;
+
+                &lt;label for="campo_Senha"&gt Senha: &lt;/label&gt;
+                &lt;input id="campo_Senha" type="password" placeholder="Senha" required&gt;
+
+                &lt;input type="submit" value="Enviar"&gt;
+            </code></pre>
+
+            <h2 class="atributos">Atributos</h2>
+            <h3>Label</h3>
+            <p><b>for="nome_do_id"</b> Recebe o nome do ID do input radio para que a string do label apareca ao lado do input do radio e ao clicar no texto ao lado da bolinha do radio ja seleciona o radio.</p>
+            <br>
+            <h3>Input</h3>
+            <p><b>text -- </b> Entrada do tipo texto.</p>
+            <p><b>required -- </b> Siginifica que o preenchimento do campo é obrigatorio.</p>
+            <p><b>type="email" -- </b> É nescessario conter pelo menos um ( @ ) e um ( . ) para ser rconhecido como e-mail.</p>
+            <p><b>type="passeord" -- </b> Mostra a senha subistituida por ( **** ).</p>
+            <p><b>type="submit" value="Enviar" -- </b> Cria um <b>Botão</b> que envia as informações do formulario.</p>
+            <p><b>placeholder -- </b> Texto em marca de agua dentro do campo imput informando ao usuario o que fazer</p>.
+
+            <h3>Submit</h3>
+            <p><b>type="submit"</b> Botao que envia as informaçoes do formulario</p>
+            <p><b>value="Enviar"</b> Texto do Botão.</p>
+            <br><br>
+            <hr>
+            
+            <!-- Radio -->
+            <h2>Radio</h2>
+            <h3>Animal de estimação</h3>
+            <br>
+            <input type="radio" id="dog" name="animal" value="Cachorro">
+            <label for="dog">Cachorro</label> <br>
+
+            <input type="radio" id="cat" name="animal" value="Gato">
+            <label for="cat">Gato</label> <br>
+
+            <input type="radio" id="bird" name="animal" value="Passarinho">
+            <label for="bird">Passarinho</label>
+            <br><br>
+
+            <h2 class="atributos">Código fonte</h2>
+            <pre><code>
+                &lt;input type="radio" id="dog" name="animal" value="Cachorro"&gt;
+                &lt;label for="dog">Cachorro&lt;/label&gt;
+
+                &lt;input type="radio" id="cat" name="animal" value="Gato"&gt;
+                &lt;label for="cat">Gato&lt;/label&gt;
+
+                &lt;input type="radio" id="bird" name="animal" value="Passarinho"&gt;
+                &lt;label for="bird">Passarinho&lt;/label&gt;
+            </code></pre>
+
+            <h2 class="atributos">Atributos</h2>
+            <p><b>value="cachorro"</b> É o valor do radio, que será enviado quando clicar no botao <b>Enviar</b> do formulario, para que seja salvo no arquivo.php.</p>
+            <p><b>name="animal"</b> Tem que ser igual para todos os radio.</p>
+            <p><b>id="dog"</b> Liga o input radio a label com o nome da radio.</p>
+            <br><br>
+            <hr>
+
+            <!-- Ckeckbox -->
+            <h2> Checkbox </h2>
+            <h3>O que voçê tem em casa?</h3>
+            <br>
+            <input id="item1" type="checkbox" name="item1" value="TV">
+            <label for="item1">TV</label>
+            <br><br>
+            <input id="item2" type="checkbox" name="item2" value="Geladeira" >
+            <label for="item2">Geladeira</label>
+            <br><br>
+            <input id="item3" type="checkbox" name="item3" value="Computador" >
+            <label for="item3">Computador</label>
+            <br>
+
+            <h2 class="atributos">Código fonte</h2>
+            <pre><code>
+                &lt;input id="item1" type="checkbox" name="item1" value="TV"&gt;
+                &lt;label&gt; for="item1"&gt;TV&lt;/label&gt;
+
+                &lt;input id="item2" type="checkbox" name="item2" value="Geladeira" &gt;
+                &lt;label&gt; for="item2"&gt;Geladeira&lt;/label&gt;
+
+                &lt;input id="item3" type="checkbox" name="item3" value="Computador" &gt;
+                &lt;label&gt; for="item3"&gt;Computador&lt;/label&gt;
+            </code></pre>
+            <br>
+
+            <h2 class="atributos">Atributos</h2>
+            <p><b>id -- </b>Identificador único, usado para associar com um <label>.</p>
+            <p><b>type -- </b>Define que o campo é um checkbox.</p>
+            <p><b>aria -- </b>Atributos de acessibilidade (informam leitores de tela sobre o estado do checkbox).</p>
+            <p><b>form -- </b>Liga o checkbox a um formulário específico, mesmo que esteja fora da tag <form>.</p>
+            <p><b>tabindex -- </b>Define a ordem de navegação por teclado (Tab).</p>
+            <p><b>checked -- </b>Faz o checkbox iniciar já marcado.</p>
+            <p><b>disabled -- </b>Desativa o checkbox (não pode ser clicado).</p>
+            <p><b>required -- </b>Obriga o usuário a marcar pelo menos uma opção (quando usado em grupo com mesmo name).</p>
+            <p><b>value="TV" -- </b> Nome que será enviado ao servidor quando estiver marcado.</p>
+            <p><b>name="item1" -- </b> tem que ser nomes diferentes ara cada checkbox.</p>
+            <p><b>autocomplete -- </b>Define se o navegador deve lembrar o estado marcado/desmarcado.</p>
+            <br><br>
+            <hr>
+
+            <!-- Select -->
+            <h2>Select ou ComboBox</h2>
+            <label for="Cor">Escolha uma cor:</label>
+            <br><br>
+            <select name="cores" id="Cor">
+                <option selected disabled value="">Selecione a Cor</option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+            </select>
+            <br><br>
+
+            <h2 class="atributos">Código fonte</h2>
+            <pre><code>
+                &lt;label&gt; for="Cor"&gt; Escolha uma cor: &lt;/label&gt;
+        
+                &lt;select&gt; name="cores" id="Cor"&gt;
+
+                &lt;option&gt; selected disabled value=""&gt; Selecione a Cor &lt;/option&gt;
+
+                &lt;option&gt; value="azul"&gt; Azul &lt;/option&gt;
+                &lt;option&gt; value="amarelo"&gt; Amarelo &lt;/option&gt;
+                &lt;option&gt; value="verde"&gt; Verde &lt;/option&gt;
+
+                &lt;/select&gt;
+            </code></pre>
+
+            <h2 class="atributos">Atributos</h2>
+            <p><b>for="Cor"</b> No label for Pega o ID do select</p>
+            <p><b>name="Cores"</b> Nome de identificação ao ser enviado para o arquivo.php</p>
+            <p><b>value="Azul"</b> Valores a ser selecionado (escolhido pelo usuario)</p>
+            <br><br>
+            <hr>
+            
+            <!-- Text Area -->
+            <h2>Text Area</h2>
+            <h3>Digite sua menssagem:</h3>
+            <br>
+            <textarea required placeholder="Digite sua menssagem aqui." title="Digite sua mensagem" rows="10" cols="80" name="menssagem" id="testo_Longo"></textarea>
+            <h2 class="atributos">Código fonte</h2>
+            <pre><code>
+                &lt;textarea required placeholder=" Digite sua menssagem aqui. " rows="10" cols="80" name="menssagem" id="testo_Longo" &gt&lt/textarea&gt;
+            </code></pre>
+        
+            <h2 class="atributos">Atributos</h2>
+
+            <p><b>name="menssagem" -- </b> Nome que sera enviado para o arquivo.php.</p>
+            <p><b>id -- </b>Identificador único, usado para associar um <label> ou scripts.</p>
+            <p><b>rows="10" -- </b> Numero de linhas que tera o textArea.</p>
+            <p><b>cols="80" -- </b> Numero de coluna que tera o textArea.</p>
+            <p><b>placeholder="" -- </b>Menssagem informativa.</p>
+            <p><b>maxlength -- </b>maxlength="200", Limita a quantidade máxima de caracteres que podem ser digitados.</p>
+            <p><b>minlength -- </b>minlength="10", Exige uma quantidade mínima de caracteres antes de enviar o formulário.</p>
+            <p><b>disabled -- </b>Desativa a caixa (não pode ser usada nem editada).</p>
+            <p><b>readonly -- </b>Torna o texto somente leitura (pode ser copiado, mas não alterado).</p>
+            <p><b>required -- </b> Obriga o preenchimento antes de enviar o formulário.</p>
+            <p><b>autofocus -- </b>Faz a caixa receber foco automático quando a página carrega.</p>
+            <p><b>form -- </b>form="form1", Liga o &lt;textarea&gt; a um formulário específico, mesmo que esteja fora da tag <form>.</p>
+            <p><b>wrap -- </b>Controla a quebra automática de linha ao enviar o texto:wrap="soft" ou wrap="hard", 🔹 soft: quebra só visualmente (não insere “\n”), 🔹 hard: insere as quebras no valor enviado.</p>
+            <p><b>spellcheck -- </b>spellcheck="true" ou false, Liga ou desliga a verificação ortográfica.</p>
+            <p><b>autocomplete -- </b>autocomplete="on" ou off, Controla se o navegador deve sugerir textos anteriores já digitados.</p>
+            <p><b></b></p>
+            <p><b>action="arquivo.php" -- </b> Para onde vao as informações do formulario ficará salvo no arquivo.php, Para qual as informaçoes do formalario serão enviados (salvas).</p>
+            <br>
+        </form>
+    </main>
+
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+</body>
+</html>

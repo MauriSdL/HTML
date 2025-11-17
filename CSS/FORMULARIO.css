@@ -1,0 +1,26 @@
+
+main {
+    padding-left: 30px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.atributos {
+    text-align: left;
+    margin-left: 0px;
+    padding: 10px  0px 10px 0px;
+}
+
+hr {
+    position: absolute;
+    left: 25%;
+    width: 700px;
+}
+
+img {
+    width: 900px;
+    height: 300px;
+}

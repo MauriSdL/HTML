@@ -1,0 +1,65 @@
+
+:root {
+  /* 🎨 Modo Claro */
+  --cor-fundo: #F5F7FA;
+  --cor-primaria: #3A7DFF;
+  --cor-secundaria: #FFD166;
+  --cor-acento: #06D6A0;
+  --cor-texto: #1C1C1C;
+}
+
+body.dark-mode {
+  /* 🌙 Modo Escuro */
+  --cor-fundo: #1E1E2E;
+  --cor-primaria: #4F9DFF;
+  --cor-secundaria: #FFD166;
+  --cor-acento: #00C896;
+  --cor-texto: #EAEAEA;
+}
+
+/* Smartphones (600px para baixo)/ */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: var(--cor-fundo);
+    }
+
+    menu li{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Dispositivos um pouco maiores,
+Mas ainda pequenos(Pequenos Tablets e
+Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color:var(--cor-secundaria);
+    }
+}
+
+
+/*Dispostivos Médios (Tablets deitados,
+768px para cima) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: var(--cor-primaria);
+    }
+}
+
+
+/* Dispostivos Largos (laptops/desktops,
+992px para cima) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: var(--cor-texto);
+    }
+}
+
+/* Super Largos (Telas maiores laptops, desktops
+e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: var(--cor-acento);
+    }
+}

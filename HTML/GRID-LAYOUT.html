@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/STYLE.css">
+    <link rel="stylesheet" href="../CSS/GRID-LAYOUT.css">
+    <title>GRID-LAYOUT</title>
+</head>
+<body>
+    <header>
+		<h1>GRID-LAYOUT</h1>
+		<nav>
+			<ul>
+				<li class="menu"><a href="../../index.html">Home</a></li>
+				<li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+				<li class="menu"><a href="https://www.youtube.com/watch?v=IpGFoNYJJU8&list=TLGGOhmgQA0YShAwMjExMjAyNQ&t=45s" target="_blank" rel="noopener">Larissa Kich</a></li>
+				<li class="menu"><a href="https://www.youtube.com/watch?v=NvnJRLTG_5Y&t=401s" target="_blank" rel="noopener">Fernanda Kipper</a></li>
+				<li class="menu"><a href="https://www.youtube.com/watch?v=R_dqkhX7WbU&t=1285s" target="_blank" rel="noopener">Otavio Miranda</a></li>
+				<li class="menu"><a href="https://www.w3schools.com/cssref/pr_grid-template-areas.php" target="_blank" rel="noopener">W3Shools</a></li>
+				<li class="menu"><a href="https://www.youtube.com/watch?v=q_WV9exilhk&list=PLYgzkrmJnLwpeeGgdADYq3cE2yUwLLTOv" target="_blank" rel="noopener">Canal-DPW</a></li>
+				<li class="menu"><a href="https://cssgrid-generator.netlify.app/" target="_blank" rel="noopener">GeradorGrade1</a></li>
+				<li class="menu"><a href="https://cssgridgenerator.io/" target="_blank" rel="noopener">GeradorGrade2</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+        
+        <div class="legColuna">
+            <h2>Colunas</h2>
+            <p><b>grid-template-columns: 20px 20px 20px; --</b> Define que terás 3 colunas com 20px cada uma.</p>
+            <p><b>grid-template-columns: auto auto auto; --</b> Cria 3 colunas com larguras iguais.</p>
+            <p><b>grid-template-columns: auto 50px auto; --</b> Cria 3 colunas com larguras diferentes sendo a do meio com 50px, Mas poderia ser qualquer uma das 3 com o tamanho que quizer.</p>
+            <p><b>grid-template-columns: 1fr 4fr 2fr 200px; --</b> É uma fraçao do espaço disponivel, Também serve para linhas.</p>
+            <p><b>grid-template-columns: repeat(5, 200px); --</b> Cria 5 colunas de 200px,Pode usar a unidade de medida fr também , Também serve para linhas.</p>
+            <p><b>grid-template-columns: minmax(200px, 1fr); --</b> Cria colunas especificando o tamanho minimo e maximo dela,<br><b>minmax</b> --> Também pode ser usada junto com o repeat ex: <b>grid-template-columns: reapet(3, minmax(200px, 1fr))</b>.</p><br>
+            
+            <h2>Linas</h2>
+            <p><b>grid-template-rows: 200px 100px 50px; --</b> Define a largura das linhas</p><br>
+        
+            <h2>Altura fixa para cada linha</h2>
+            <p>grid-auto-rows: 200px; -- OBS:Por ser uma altura fixa tem que ser em px.</p>
+
+            <h2>Espaçamento entre as colunas e linhas</h2>
+            
+            <h3>Espaçamento igual entre colunas e linhas</h3>
+            <p>O gap deve ser usado no Container pai.</p>
+            <p>gap: 20px:</p><br>
+            
+            <h3>Espaçamento diferente entre linhas e colunas</h3>
+            <p>gap: linha coluna;</p>
+            <p>gap: 20px 40px;</p><br>
+
+            <h3>Espaçamento entre linhas individualmente</h3>
+            <p>O row-gap nao deixa espaçamento entre as colunas.</p>
+            <p>row-gap: 20px;</p><br>
+
+            <h3>Espaçamento entre colunas individualmente</h3>
+            <p>column-gap: 50px;</p>
+
+            <h2>Alinhamento dos itens no eixo horizontal</h2>
+            <h3>Alinha no centro</h3>
+            <p>justify-items: center;</p>
+
+            <h2>Alinhamento do item individualmente no eixo vertical</h2>
+            <p>align-self: start;</p><br>
+
+            <h2>Alinhamento do item individualmente no eixo horizontal</h2>
+            <p>justify-self: start;</p><br>
+
+            <h3>Alinhamento no inicio(lado esquerdo)</h3>
+            <p>justify-items: start;</p>
+
+            <h3>Alinhamento no final(lado direito)</h3>
+            <p>justify-items: end;</p>
+
+            <h2>Alinhamento dos itens no eixo vertical</h2>
+            <h3>Alinha o item ao centro</h3>
+            <p>align-items: center;</p>
+            
+            <h3>Alinha o item no inicio(fica no lado esquerdo)</h3>
+            <p>align-items: start;</p>
+
+            <h3>Alinha o item no final(fica no lado direito)</h3>
+            <p>align-items: center;</p>
+
+            <h3>Espaçamento entre as colunas</h3>
+            <p>align-items: stretch;</p>
+
+            <h2>Alinha no eixo horizontal</h2>
+            <h3>item no centro da pagina</h3>
+            <p>justify-content: center;</p>
+
+            <h3>item no final da pagina (fica no lado direito)</h3>
+            <p>justify-content: end;</p>
+
+            <h3>item no inicio da pagina (fica no lado esquerdo)</h3>
+            <p>justify-content: start;</p>
+
+            <h3>fica um espaço apenas entre os item</h3>
+            <p>justify-content: space-between;</p>
+
+            <h3>fica um espaço entre os item e tambem no inicio e no fim</h3>
+            <p>justify-content: space-around;</p>
+
+            <h2>Alinha no eixo vertical</h2>
+            <p>Mas para isso o container tem que ter uma altura definida.</p>
+            
+            <h3>Alinha no centro</h3>
+            <p>align-content: center;</p>
+
+            <h3>Alinha no inicio (fica na parte de cima)</h3>
+            <p>align-content: start;</p>
+            
+            <h3>Alinha no final(Fica na parte de baixo)</h3>
+            <p>align-content: end;</p>
+
+            <h3>fica um espaço apenas entre os item</h3>
+            <p>align-content: space-between;</p>
+
+            <h3>fica um espaço na esquerda e direitra entre os item</h3>
+            <p>align-content: space-around;</p>
+
+            <h3>Distribua o espaço vertical com espaçamento igual entre linhas e também nas bordas</h3>
+            <p>align-content: space-evenly;</p>
+
+            <h3>É uma mistura de justify-items e align-items</h3>
+            <p>place-items: center start;</p>
+            <p>fica no centro e na esquerda</p>
+
+            <h2>Ajuste automático de colunas no Grid</h2>
+            <p>grid-template-columns:repeat(autofix, minmax(200px. 1fr));</p>
+
+            <h2>Extender comprimento da coluna</h2>
+            <p>Isso faz com que o Grid crie várias colunas automaticamente, cada uma tendo pelo menos 200px, mas podendo aumentar até ocupar o espaço disponível.</p>
+            <p>O auto-fit empurra as colunas para se ajustar ao espaço da tela, fazendo o layout ser responsivo.</p>
+            <p>Em outras palavras: ele monta quantas colunas couberem, cada uma crescendo e se encolhendo de acordo com o tamanho da tela.</p>
+            <p>grid-column:1/5; -- Da primeira ate a quinta coluna.</p><br>
+
+            <h2>Preenchimento automático de colunas</h2>
+            <p>Isso faz o Grid criar o maior número possível de colunas com largura mínima de 200px, e se tiver espaço sobrando, cada coluna se expande até preencher o restante da área.</p>
+            <p>O auto-fill tenta preencher a linha com o máximo de colunas, mesmo que sobrem espaços vazios.</p>
+            <p>grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</p><br>
+
+            <h2>Grid-template-areas</h2>
+            <p><b>Nomeando áreas -- </b>Você define a estrutura da sua grade usando a grid-template-areaspropriedade no contêiner da grade. Essa propriedade usa uma sequência de nomes para representar visualmente o layout da grade, como um mapa</p>
+            <p><b>Atribuição de elementos -- </b>Em seguida, você atribui elementos HTML individuais a essas áreas nomeadas usando a grid-areapropriedade nos elementos filhos.</p>
+            <p><b>Criando espaço vazio -- </b>Você pode deixar células vazias na grid-template-areasdefinição usando um ponto final ( .).</p>
+            <p><b>ormato retangular -- </b>As áreas da grade devem ser retangulares; não é possível criar áreas em forma de T ou L. </p>
+            <img class="img-grid-template-areas" src="../IMG/cursoGridLayout/Grid-template-areas.webp" alt="grid-template-areas">
+            <pre><code>
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 50px 1fr 30px;
+                    grid-template-areas:
+                        "header header"
+                        "sidebar main"
+                        "footer footer";
+                }
+
+                .header {
+                    grid-area: header;
+                }
+
+                .sidebar {
+                    grid-area: sidebar;
+                }
+
+                .main {
+                    grid-area: main;
+                }
+
+                .footer {
+                    grid-area: footer;
+                }
+
+            </code></pre>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="whatsApp" >
+            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank" rel="noopener"> 💬 Contato do WhatsApp</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+main {
+    padding: 5px 5px;
+    /* background-color: blueviolet; */
+}
+
+h2{
+    padding: 20px;
+}
+
+p {
+    padding: 8px;
+}
+
+
+/* a {
+    font-size: 22px;
+    font-weight: bolder;
+    color: blueviolet;
+    border-radius: 0px;
+    background-color: aqua;
+    margin-left: 30px;
+} */
+
+img {
+    margin-left: 20px;
+    padding: 20px 20px; 
+}
+
+.bancoImagem {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.comprimirImagem {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.carrega-img-da-URL {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.imagem-localmente {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.imgEmlinks {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.gif {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.baixarIcons {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 30px 20px 30px;
+    background-color: aqua;
+}
+
+.icones {
+    border-radius: 15px;
+    margin: 20px 30px 20px 30px;
+    background-color:aqua;
+    padding-bottom: 30px;
+    text-align: left;
+} 
+
+.icon{
+    display: inline;
+
+}
+
