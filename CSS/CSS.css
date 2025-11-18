@@ -1,14 +1,20 @@
-hr {
-    margin-left: 25%;
-    width: 600px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 h2 {
-    margin: 10px 0px 10px 0px;
+    text-align: center;
 }
 
-p {
-    margin: 9px 0px 9px 0px;
+h3 {
+    margin-left: 30px;
 }
 
 .ordem {
@@ -18,6 +24,124 @@ p {
     background-color: aqua;
 }
 
+.tipo-de-bordas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.Border-solid {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px solid black;
+}
+.Border-dotted {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px dotted black;
+}
+.Border-dashed {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px dashed black;
+}
+.Border-double {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px double black;
+}
+.Border-groove {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px groove black;
+}
+.Border-ridge {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px groove black;
+}
+.Border-inset {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px inset black;
+}
+.Border-outset {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px outset black;
+}
+.Border-hidden {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px hidden black;
+}
+.Border-none {
+   text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    height: 20px;
+    border: 15px none black;
+}
+
+.lados-diferentes {
+    padding: 15px;
+    border-top: 15px solid red;
+    border-left: 15px groove yellow;
+    border-right: 15px double green;
+    border-bottom: 15px dashed black;
+}
+
+.borda-Arredondada {
+    padding: 15px;
+    border: 15px solid blue;
+    border-radius: 30px; 
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.text-align {
+    font-size: 18px;
+    margin: 10px 10px;
+}
+
+.fonts {
+    margin: 10px 0px 10px 30px;
+
+}
+
 .Seletores-e-Classes {
     margin: 15px 5% 15px 5%;
     padding: 25px;
@@ -25,155 +149,121 @@ p {
     background-color: aqua;
 }
 
-.botao1 {
-    background-color: green;
+.positionStatic, .positionrelative, .div_filho_Absolute, .div_filho_sticky{
+    margin-left: 30px;
 }
 
-.botao2 {
-    background-color: blue;
+.googleFonts {
+    padding-left: 30px;
+    color: red;
+    background-color: aqua;
 }
 
-.botao3 {
-    background-color: blueviolet;
+
+/* Opacity imagem transparencia */
+.container-pai{
+    background-color: aqua;
+    margin: 0px 70px 0px 70px;
+    border-radius: 25px;
 }
 
-.botao4 {
-    background-color: brown;
+
+.filho1{
+    width: 60%;
+    height: auto;
+    background-color:aqua;
 }
 
-.botao5 {
-    background-color: chocolate;
-}
 
-/* Opacity */
 .opacity_1 {
+    width: 15%;
+    height: auto;
     opacity: 0.0;
 }
 
 .opacity_2 {
+    width: 15%;
+    height: auto;
     opacity: 0.05;
 }
 
 .opacity_3 {
+    width: 15%;
+    height: auto;
     opacity: 0.1;
 }
 
 .opacity_4 {
+    width: 15%;
+    height: auto;
     opacity: 0.2;
 }
 
 .opacity_5 {
+    width: 15%;
+    height: auto;
     opacity: 0.3;
 }
 
 .opacity_6 {
+    width: 15%;
+    height: auto;
     opacity: 0.4;
 }
 
 .opacity_7 {
+    width: 15%;
+    height: auto;
     opacity: 0.5;
 }
 
 .opacity_8 {
+    width: 15%;
+    height: auto;
     opacity: 0.6;
 }
 
 .opacity_9 {
+    width: 15%;
+    height: auto;
     opacity: 0.7;
 }
 
 .opacity_10 {
+    width: 15%;
+    height: auto;
     opacity: 0.8;
 }
 
 .opacity_11 {
+    width: 15%;
+    height: auto;
     opacity: 0.9;
 }
 
 .opacity_12 {
+    width: 15%;
+    height: auto;
     opacity: 1;
 }
 
 
-/* Efeito Dropdown */
-
-ul {
-    background-color: black;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+.a-Opacity {
+    margin-left: 30px;
+    color:black;
+    background-color: aqua;
 }
 
-
-li {
-    float:left;
+.a-Opacity:hover {
+    color: blueviolet;
+    background-color: aqua;
 }
+/* Opacity imagem transparencia */
 
 
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-
-li.dropdown {
-    display: inline-block;
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    width: 150px;
-}
-
-
-.dropdown-content a{
-    color: black;
-    display: block;
-    text-align: left;
-    border: 1px solid aqua;
-}
-
-
-.dropdown-content a:hover {
-    color:rgb(145, 2, 2);
-    background-color:red;
-    font-size: 24px;
-    letter-spacing: 2px;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-   
 /* Efeito card */
 .efeito-texto-em-card{
     width: 18%;
     height: auto;
     box-shadow: 0 4px 8px 0 black;
-}
-
-.reduzido{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-bottom: 30px;
-}
-
-.efeito-texto-em-card:hover .reduzido{
-    white-space: normal;
 }

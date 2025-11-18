@@ -19,31 +19,39 @@ main {
 header {
   border-radius: 23.5px 23.5px 0px 0px;
   background-color: black;
-  height: 110px;
+  height: 95px;
 }
 
-.menu {
+.menu, a {
   text-decoration: none;
-  margin-right: 10px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  font-size: 22px;
+  padding-bottom: 0px;
+  margin-right: 2px;
+  margin-left: 2px;
+  font-size: 20px;
   font-weight: bolder;
   color: white;
+  background-color: black;
   display: inline;
   text-decoration: none;
 }
 
 a:hover {
-  color: green;
+  background-color: white;
+  padding: 3px 7px 0px 7px;
+  border-radius: 10px 10px 0px 0px;
+  color: black;
 }
 
 h1 {
-  padding: 13px 0px 13px 0px;
+  padding: 23px 0px 3px 0px;
   text-align: center;
   color:white;
   font-size: 40px;
   letter-spacing: 5px;
+}
+
+.title-black{
+  color: black;
 }
 
 h2 {
@@ -68,19 +76,3 @@ footer {
   border-radius: 0px 0px 25px 25px;
 }
 
-a {
-  text-decoration:none;
-  border-radius:15px;
-  background-color: rgb(221, 170, 151);
-}
-
-.whatsApp {
-  text-align: center;
-  transform: translate(-1%, 110%);
-}
-
-a {
-  font-weight:bold;
-  color:black;
-  padding: 3px 4px 3px 4px;
-}

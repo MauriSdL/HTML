@@ -9,12 +9,12 @@
 </head>
 <body>
     
-    <header class="header">
+    <header>
         <h1>Folhas de estilo CSS</h1>
         <nav>
             <ul>
-                <li class="menu"><a href="../index.html">Home</a></li>
-                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">Html</a></li>
+                <li class="menu"><a href="../index.html">HOME</a></li>
+                <li class="menu"><a href="../HTML/HTML__CSS__BASICO.html">HTML</a></li>
             </ul>
         </nav>
     </header>
@@ -68,6 +68,7 @@
             </code></pre>
         </div>
 
+
         <!-- Color -->
         <div class="ordem">
             <h2> Cor do texto</h2>
@@ -78,6 +79,7 @@
         <!-- Background -->
         <div class="ordem">
             <h2> Background - Cor do fundo / Imagem de fundo</h2>
+            <br>
             <h3>Cor do fundo</h3>
             <p>Background-color:"red";</p>
             <br>
@@ -105,7 +107,7 @@
             <h3>Repetir a imagem para baixo</h3>
             <p><b>background-repeat:repeat-y; =></b> Repeta a Imagem para baixo.</p>
             <br>
-            <h3>se ajusta para cobrir todo o espaço do fundo</h3>
+            <h3>Se ajusta para cobrir todo o espaço do fundo</h3>
             <p>background-size:cover;</p>
             <br>
             <h3>Area central da imagem na posiçao desejada</h3>
@@ -116,29 +118,36 @@
         <!-- Border -->
         <div class="ordem">
             <h2>Border</h2>
-            <p>border: 5px solid black;</p>
-            <div class="div-Border-solid">border: solid</div>
-            <div class="div-Border-dotted">border: dotted -> Pontilhado</div>
-            <div class="div-Border-dashed">border: dashed -> Tracejado</div>
-            <div class="div-Border-double">border: double</div>
-            <div class="div-Border-groove">border: groove</div>
-            <div class="div-Border-ridge">border: ridge</div>
-            <div class="div-Border-inset">border: inset</div>
-            <div class="div-Border-outset">border: outset</div>
-            <div class="div-Border-hidden">border: hidden -> Oculta</div>
-            <div class="div-Border-none">border: none -> Nenhuma</div> <br>
-            <div>
-                Com lados Diferentes <br>
-                border-top: 7px solid red;<br>
-                border-left: 7px groove yellow;<br>
-                border-right: 7px double green;<br>
-                border-bottom: 7px dashed black;
-            </div> <br>
-            <div>
-                Borda Arredondada <br>
-                border: 7px solid blue;<br>
-                boder-radius: 30px; <br>
-                User: px ou %.
+            <p>border: Espessura Tipo Cor</p>
+            <p>border:          5px   solid  black;</p>
+            <br>
+            <div class="tipo-de-bordas">
+                <div class="Border-solid">solid</div>
+                <div class="Border-dotted">dotted</div>
+                <div class="Border-dashed">dashed</div>
+                <div class="Border-double">double</div>
+                <div class="Border-groove">groove</div>
+                <div class="Border-ridge">ridge</div>
+                <div class="Border-inset">inset</div>
+                <div class="Border-outset">outset</div>
+                <div class="Border-hidden">hidden Oculta</div>
+                <div class="Border-none">none Nenhuma</div>
+
+                <div class="lados-diferentes">
+                    Com lados Diferentes <br>
+                    border-top: 7px solid red;<br>
+                    border-left: 7px groove yellow;<br>
+                    border-right: 7px double green;<br>
+                    border-bottom: 7px dashed black;
+                </div>
+            
+                <div class="borda-Arredondada">
+                    Borda com cantos <br>
+                    Arredondada <br><br>
+                    border: 7px solid blue;<br>
+                    border-radius: 30px; <br>
+                    User: px ou %.
+                </div>
             </div>
         </div>
 
@@ -155,6 +164,7 @@
             <p><b>Margin -</b> É o espaço fora do elemento(content) — Separa ele dos outros. Ex:<br> margin-top: 15px <br>margin-right: 15px <br>margin-bottom: 15px <br>margin-left: 15px</p>
             <br>
             <p><b>Padding -</b> É o espaço dentro do elemento(content) — Afasta o conteúdo das bordas internas. Ex:<br> padding-top: 15px <br>padding-right: 15px <br>padding-bottom: 15px <br>padding-left: 15px</p>
+            <br><br>
             <img src="../IMG/html-css/margins_e_padding.png" width="500px" alt="imagem descreve margin e padding do css">
         </div>
 
@@ -162,35 +172,45 @@
         <!-- width right -->
         <div class="ordem">
             <br>
-            <h2>width(Largura) height(Altura)</h2>
-            <p>Largura - width:300px; <br> Altura - height: 300px</p>
-            <p>Largura máxima <br> max-width: 250px;</p>
-            <p>Largura minima <br> min-width:30px;</p>
-            <p>Altura máxima <br> max-height: 500px;</p>
-            <p>Altura minima <br> min-height:50px;</p>
+            <h2>Largura  e Altura</h2>
+
+            <p>width:300px; - Largura</p>
+            <p>height: 300px; - Altura</p>
+            <br>
+            <h3>Largura máxima</h3>
+            <p>max-width: 250px;</p>
+            <br>
+            <h3>Largura minima</h3>
+            <p>min-width:30px;</p>
+            <br>
+            <h3>Altura máxima</h3>
+            <p>max-height: 500px;</p>
+            <br>
+            <h3>Altura minima</h3>
+            <p>min-height:50px;</p>
         </div>
 
 
         <!-- Text - align-->
         <div class="ordem">
             <h2>Text-align</h2>
-            <p>text-align:center; ==> Centraliza o texto</p>
-            <p>text-align:end; ==> Alinha conforme o fim da escrita (ex: direita em português).</p>
-            <p>text-align:justify; ==> Alinha o texto nos dois lados, como em jornais.</p>
-            <p>text-align:justify-all; ==> Justifica todas as linhas, inclusive a última.</p>
-            <p>text-align:left; ==> Alinha o texto à esquerda.</p>
-            <p>text-align:right; ==> Alinha o texto à direita.</p>
-            <p>text-align:start; ==> Alinha conforme o início da escrita (ex: esquerda em português).</p>
-            <p>text-align:inherit; ==> Copia o valor de text-align do elemento pai (explicitamente).</p>
-            <p>text-align:initial; ==> Redefine a propriedade para o valor padrão do CSS, ou seja, como se nenhum text-align tivesse sido aplicado</p>
-            <p>text-align:unset; ==> Se o elemento normalmente herda text-align (como o texto em &lt;p&gt; ou &lt;div&GT;), ele volta a herdar do pai.</p>
-            <p>text-align:match-parent; ==> Faz o texto herdar o alinhamento horizontal do elemento pai, mas de forma explícita, ou seja, o navegador calcula o alinhamento com base no valor real aplicado ao pai (por exemplo, left, right, center etc.).</p>
-            <br>
+
+            <p class="text-align">text-align:center; ==> Centraliza o texto</p>
+            <p class="text-align">text-align:end; ==> Alinha conforme o fim da escrita (ex: direita em português).</p>
+            <p class="text-align">text-align:justify; ==> Alinha o texto nos dois lados, como em jornais.</p>
+            <p class="text-align">text-align:justify-all; ==> Justifica todas as linhas, inclusive a última.</p>
+            <p class="text-align">text-align:left; ==> Alinha o texto à esquerda.</p>
+            <p class="text-align">text-align:right; ==> Alinha o texto à direita.</p>
+            <p class="text-align">text-align:start; ==> Alinha conforme o início da escrita (ex: esquerda em português).</p>
+            <p class="text-align">text-align:inherit; ==> Copia o valor de text-align do elemento pai (explicitamente).</p>
+            <p class="text-align">text-align:initial; ==> Redefine a propriedade para o valor padrão do CSS, ou seja, como se nenhum text-align tivesse sido aplicado</p>
+            <p class="text-align">text-align:unset; ==> Se o elemento normalmente herda text-align (como o texto em &lt;p&gt; ou &lt;div&GT;), ele volta a herdar do pai.</p>
+            <p class="text-align">text-align:match-parent; ==> Faz o texto herdar o alinhamento horizontal do elemento pai, mas de forma explícita, ou seja, o navegador calcula o alinhamento com base no valor real aplicado ao pai (por exemplo, left, right, center etc.).</p>
         </div>
 
         
         <div class="ordem">
-            <h2>Escrito de traz para frente</h2>
+            <h2>Escrita de traz para frente</h2>
             <p>direction:rtl; </p>
             <p>Define que o texto será exibido da direita para a esquerda (Right-To-Left), usado em idiomas como árabe e hebraico.</p>
             <br>
@@ -216,49 +236,46 @@
         <!-- Font -->
         <div class="ordem">
             <h2>Font</h2>
-            <p>font: italic bold 16px/1.5 "Arial", sans-serif;</p><br>
+            <p class="fonts">font: italic bold 16px/1.5 "Arial", sans-serif;</p><br>
+            
             <h2>Propriedades font</h2>
-            <p>Font-size:15px; ==> Tamanho da fonte.</p><br>
+            <p class="fonts">Font-size:15px; ==> Tamanho da fonte.</p><br>
+            
             <h2>Fonte style</h2>
-            <p>font-style: italic; ==> Fonte Italica.</p>
-            <p>font-style: oblique; ==> Mais inclinado que italic.</p>
-            <p>font-weight: bold; ==> Grossura da fonte.</p><br>
+            <p class="fonts">font-style: italic; ==> Fonte inclinada.</p>
+            <p class="fonts">font-style: oblique; ==> Mais inclinado que italic.</p>
+            <p class="fonts">font-weight: bold; ==> Grossura da fonte.</p><br>
+            
             <h2>fonte externa</h2>
-            <a href="https://fonts.google.com/" target="_blank" rel="noopener">Google  --> Baixar fontes</a><br><br>
-            <p>1- No site do google fonts.</p>
-            <p>2- Escolha o tipo de fonte.</p>
-            <p>3- Clique no radio @import. Link copiado de ex: @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&display=swap');</p>
-            <p>4- Copie o link dentro do Style.</p>
-            <p>5- No arquivo Css importe a fonte colando o link Copiado.</p>
-            <p>6- No site do goole font , Em Css rules to specify families,Copie a familia de conte desejada.</p>
-            <p>7- Cole no css em font-family: fonte_Escolhida_Aqui;</p>
-        </div>
-
-        <!-- Estilizazção de links -->
-        <div class="ordem">
-            <h2>Estilizazção de links</h2> <br>
-            <a class="botao1" href="../index.html">Voltar para index</a><br><br>
-            <a class="botao2" href="../index.html">Voltar para index</a><br><br>
-            <a class="botao3" href="../index.html">Voltar para index</a><br><br>
-            <a class="botao4" href="../index.html">Voltar para index</a><br><br>
-            <a class="botao5" href="../index.html">Voltar para index</a>
-            <pre><code>
-                a.botao5 {
-                    // Muda o tipo do curso do mause ao passar por cima do botao.
-                    cursor: progress;
-                }
-            </code></pre>
+            <a class="googleFonts" href="https://fonts.google.com/" target="_blank" rel="noopener">Google  --> Baixar fontes</a><br><br>
+            
+            <p class="fonts">1- No site do google fonts.</p>
+            <p class="fonts">2- Escolha o tipo de fonte.</p>
+            <p class="fonts">3- Clique no radio @import. Link copiado de ex: @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&display=swap');</p>
+            <p class="fonts">4- Copie o link dentro do Style.</p>
+            <p class="fonts">5- No arquivo Css importe a fonte colando o link Copiado.</p>
+            <p class="fonts">6- No site do goole font , Em Css rules to specify families,Copie a familia de conte desejada.</p>
+            <p class="fonts">7- Cole no css em font-family: fonte_Escolhida_Aqui;</p>
         </div>
 
         <!-- Display -->
         <div class="ordem">
             <h2>Display - block</h2>
-            <p>Ocupa toda largura da pagina.</p>
+            <br>
             <p>Tags que sao blocos:</p>
+            <br>
+            <p>Ocupa toda largura da pagina.</p>
+            <br>
             <p>&lt;h1/h6&gt;, &lt;form&gt;, &lt;div&gt;, &lt;p&gt;, &lt;header&gt;, &lt;section&gt;, &lt;footer&gt;</p><br>
+        </div>    
+            
+        <div class="ordem">
             <h2>Display - in line</h2>
+            
             <p>Cria um elemento que não ocupa toda a largura da pagina, apenas a largura do elemento, E fica na mesma linha.</p>
+            <br>
             <h3>Propriedades não aceitas:</h3>
+            <br>
             <p>width <br>
             height <br>
             margin-top <br>
@@ -273,7 +290,7 @@
             max-widthbr
             min-height <br>
             max-height.</p>
-            <br>
+            <br><br>
 
             <h3>Propriedades aceitas:</h3>
             <p>color <br>
@@ -285,34 +302,29 @@
             padding-right <br>
             margin-left <br>
             margin-right.</p>
-            <br>
-            
-            <h3>Tags in line:</h3>
-            <a href="" class="inline">a (link)</a>
-            <img class="inline" src="" alt="imagem">
-        
         </div>
         
+
         <div class="ordem">
             <h2>Display - In line block</h2>
+            <br>
             <p>Coloca um ao lado do outro e Aceita as propriedades Largura e Altura.</p>
-            <a href="" class="inlineblock">a (link)</a>
-            <span class="inlineblock">span</span>
-            <img class="inlineblock" src="" alt="imagem">
             <br><br>
 
-            <h2>Remove o elemento na pagina.( Removendo o Elemento e o espaço ocupado por ele.)</h2>
+            <h2>Remove ou Oculta o elemento na pagina. <br> ( Removendo o Elemento e o espaço ocupado por ele.)</h2>
             <p>display:none;</p>
-            <br>
+            <br><br>
 
-            <h2>Oculta o elemento da pagina ( Remove o elemento, Porem mantem o espaço ocupado por ele nada na tela. )</h2>
-            <p>visibility: hidden;</p>
+            <h2>Oculta o elemento da pagina <br> ( Remove o elemento, Porem mantem o espaço ocupado por ele nada na tela. )</h2>
+            <br>
+            <p>visibility: hidden;</p><br>
         </div>
 
         <!-- Propriedade Max-Width -->
         <div class="ordem">
             <br>
             <h2>Largura maxima do elemento</h2>
+            <br>
             <p>max-width:800px;</p>
         </div>
 
@@ -320,6 +332,7 @@
         <div class="ordem">
             <br>
             <h2>Position: static;</h2>
+            <br>
             <h3>position: static  -- Referente a posição padrão que foi criado.</h3>
             <br>
             <div class="positionStatic">
@@ -361,15 +374,21 @@
                 }
             </code></pre>
             <br>
-            <hr>
+        </div>
+            
 
+        <div class="ordem">
             <!-- Relative -->
              <br>
             <h2>Position: relative;</h2>
-            <h3>position: relative;  -- Ele continua ocupando o mesmo espaço <br>Mas você pode reposiciona-lo usando as propriedades:<br> top <br>left <br>right <br>bottom.</h3>
             <br>
+            <h3>position: relative;  -- Continua ocupando o mesmo espaço, <br>Mas você pode reposiciona-lo usando as propriedades:<br><br> top <br>left <br>right <br>bottom.</h3>
+            <br>
+        </div>
 
-            <h2>Elemento fica na frente ou atraz.</h2>
+        <div class="ordem">
+            <h2>Elemento na frente ou atraz.</h2>
+            <br>
             <p>OBS: Só funcina se na class estiver o position: relative; junto.</p>
             <p>Pode ser de um numero negativo ate 9999.</p><br>
             <p>z-index: -1; -- A div Amarela fica atraz da div Azul.</p>
@@ -399,7 +418,6 @@
                     z-index: -1;
                 }
             </code></pre>
-            <hr>
         </div>
 
         <!-- Position fixed -->
@@ -436,6 +454,7 @@
         <div class="ordem">
             <br>
             <h2>Position absolute</h2>
+            <br>
             <p>É a posiçao do elemento em relacao ao Pai.</p>
             <p>OBS: ==> O container pai tem que estar com -- position: relative; ==> Para o position: absolute; funcionar.</p>
             <p>Posicione o elemento com: top, right, bottom, left.</p>
@@ -474,7 +493,6 @@
         <div class="ordem">
             <br>
             <h2>position: sticky; (pegajoso, grudento)</h2>
-            <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">www.w3schools.com (Material de apoio )</a>
             <br><br>
             <p>Mantem o elemento na tela durante a rolagem com o scrow dentro do elemento pai.</p>
             <p>EX: Menu ou imagem que fica fixa ao rolar a tela.</p>
@@ -483,7 +501,7 @@
             <div class="div_Pai_sticky">
                 <div class="div_filho_sticky">Position: sticky;</div>
             </div>
-            <br><br>
+            <br>
             <pre><code>
                 &lt;div class="div_Pai_sticky"&gt;
                     &lt;div class="div_filho_sticky"&gt;Position: sticky;&lt;/div&gt;
@@ -516,131 +534,62 @@
         <div class="ordem">
             <br>
             <h2>Overflow</h2>
-            <p>Controla o que acontece quando o conteúdo passa do tamanho da caixa (div).</p>
             <br>
+            <p>Controla o que acontece quando o conteúdo passa do tamanho da caixa (div).</p>
+            <br><br>
             <h2>Remover barra de rolagem da vertical.</h2>
             <p><mark>overflow-y: hidden;</mark></p>
-            <br>
+            <br><br>
 
             <h2>Remover barra de rolagem da horizontal.</h2>
             <p><mark>overflow-x: hidden;</mark></p>
+            <br><br>
+
+            <h2>Parametros do Overflow</h2>
             <br>
 
-            <h3>Parametros do Overflow</h3>
-            
             <h2>auto</h2>
             <p>Mostra barra do scroll, só se haver nescessidade de mostrar todo conteudo completo, ja que o conteudo é menor que o elemento pai (div)..</p>
             <p>Esse auto, só aparece se for especificado uma autura para o elemento.</p>
-            <div class="overflow_auto">
-                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-            </div>
-            <br>
+            <br><br>
 
             <h2>hidden</h2>
             <p>Mostra só o que cabe dentro do elemento pai (div), Corta (não mostra) o conteudo que passa para fora.</p>
-            <div class="overflow_hidden">
-                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-            </div>
-            <br>
+            <br><br>
 
             <h2>scroll</h2>
             <p>Mostra barra de rolagem para ver todo o conteudo que tem dentro, Mesmo o que nao é mostrado porque excede o limite de tamanho do elemento pai (div).</p>
-            <div class="overflow_scroll">
-                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-            </div>
-            <br>
+            <br><br>
 
             <h2>visible</h2>
             <p>Mostra o conteudo, Mesmo que ele saia para fora do elemento pai (div). (padrão)</p>
-            <div class="overflow_visible">
-                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam consectetur reiciendis culpa quas ad porro illum sint dolorem eaque neque, eum reprehenderit recusandae explicabo. Vero maiores reprehenderit nisi magnam.</p>
-            </div>
+            <br>
         </div>
 
 
         <!-- Float -->
         <div class="ordem">
             <br>
-            <h2>Float</h2>
-
-            <p>Faz o elemento flutuar se despredendo do container pai.<br>
-                Podendo escolher uma posiçao para o elemento ficar, direita, esquerda.<br>
-                Faz o texto contornar uma imagem.
+            <h2>Float (texto contarna a imagem)</h2>
+            <br>
+            <p>
+                Faz o texto contornar uma imagem. <br>
+                Faz o elemento flutuar se despredendo do container pai.<br>
+                Podendo escolher uma posiçao para o elemento se posicionar a direita ou esquerda.
             </p>
             <br>
 
-            <p>No elemento dentro do container ==> style="clear:both" ==> Faz a float não valer, fazendo o texto pular o contorno na imagem.</p>
+            <p>No elemento dentro do container</p>
+            <p>style="clear:both"</p>
+            <p>Faz o float não valer, fazendo o texto pular o contorno na imagem.</p>
             <br>
             
             <div class="float_pai">
                 <img src="../IMG/html-css/Carro azul.jpg" alt="carro azul" width="250" height="400">
                 <br>
-                <p>1-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>2-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>3-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>4-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>5-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <!-- style="clear:both" -- Se colocar no h3 ele quebra o efeito do float. -->
-                <h3>Outro Titulo</h3>
-                <p>6-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>7-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>8-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p><br>
-
-                <p>9-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laudantium qui, quis aliquam ipsum ab tenetur error voluptatum
-                    sunt optio sequi voluptas necessitatibus non, reprehenderit explicabo.
-                    Nulla rerum soluta vitae dolore.
-                </p>
-
+                
                 <pre><code>
-                    Obs: Se o <mark>&lt;h3 style="clear:both"&gt; Outro Titulo &lt;/h3&gt;</mark> ==> Estivece dessa forma o efeito float seria aliminado <br>
+                    Obs: Se o <mark>&lt;h3 style="clear:both"&gt; Outro Titulo &lt;/h3&gt;</mark> ==> Estivece dessa forma o efeito float seria eliminado <br>
                     E o &lt;h3&gt; começaria abaixo da imagem ficando um espasso em branco entre o paragrafo 5-lorem e o &lt;h3&gt;Outro Titulo&lt;\h3&gt;.
 
                     /* Float */
@@ -661,127 +610,31 @@
 
 
         <!-- Opacity - Transparencia-->
-        <div class="ordem">
+        <div class="container-pai">
             <br>
             <h2>Opacity - Transparencia</h2>
-            <p>opacity:__;</p>
+            <br>
             <p>Valores de: ( 0.0 até 1.0 ) Sendo 0.1 igual a 10% de transparencia.</p>
-            <a href="https://picsum.photos/" target="_blank" rel="noopener">Site Lorem Picsum -- Busca imagem para teste de tamanhos.</a>
+            <p>opacity:__;</p>
             <br>
-            <img src="https://picsum.photos/id/234/200/200" alt="torre1" class="opacity_1">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre2" class="opacity_2">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre3" class="opacity_3">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre4" class="opacity_4"> 
-            <img src="https://picsum.photos/id/234/200/200" alt="torre5" class="opacity_5">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre6" class="opacity_6">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre7" class="opacity_7">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre8" class="opacity_8">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre9" class="opacity_9">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre10" class="opacity_10">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre11" class="opacity_11">
-            <img src="https://picsum.photos/id/234/200/200" alt="torre12" class="opacity_12">
-        </div>
-
-        <!-- Efeito Dropdown -->
-        <div class="ordem">
-            <br>
-            <h2>Efeito Dropdown</h2>
-            <p>Abre um quadradinho com mais opções para selecionar. </p>
-            <ul>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn" href="#">Efeito Dropdown</a>
-                    <div class="dropdown-content">
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                    </div>
-                </li>
-            </ul>
-            <pre><code>
-                HTML:
-                &lt;ul&gt;
-                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
-                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
-                    &lt;li&gt; &lt;a&gt; href="#"&gt; link &lt;/a&gt; &lt;/li&gt;
-                    &lt;li class="dropdown"&gt;
-                        &lt;a&gt; class="dropbtn" href="#"&gt; Efeito Dropdown &lt;/a&gt;
-                        &lt;div class="dropdown-content"&gt;
-                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
-                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
-                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
-                            &lt;a&gt; href="#"&gt; Link &lt;/a&gt;
-                        &lt;/div&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-
-                CSS:
-                /* Efeito Dropdown */
-
-                ul {
-                    background-color: black;
-                    list-style-type: none;
-                    padding: 0;
-                    margin: 0;
-                    overflow: hidden;
-                }
+            <a class="a-Opacity" href="https://picsum.photos/" target="_blank" rel="noopener">Site Lorem Picsum -- Busca imagem para teste de tamanhos.</a>
+            <br><br>
 
 
-                li {
-                    float:left;
-                }
-
-
-                li a, .dropbtn {
-                    display: inline-block;
-                    color: white;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    text-align: center;
-                }
-
-
-                li a:hover, .dropdown:hover .dropbtn {
-                    background-color: red;
-                }
-
-
-                li.dropdown {
-                    display: inline-block;
-                }
-
-
-                .dropdown-content {
-                    display: none;
-                    position: absolute;
-                    background-color: white;
-                    width: 150px;
-                }
-
-
-                .dropdown-content a{
-                    color: black;
-                    display: block;
-                    text-align: left;
-                    border: 1px solid rgb(207, 207, 207);
-                }
-
-
-                .dropdown-content a:hover {
-                    color:rgb(145, 2, 2);
-                    background-color:rgb(238, 238, 97);
-                    font-size: 24px;
-                    letter-spacing: 2px;
-                }
-
-
-                .dropdown:hover .dropdown-content {
-                    display: block;
-                }
-            </code></pre>
+            <div class="filho1">
+                <img class="opacity_1" src="https://picsum.photos/id/234/200/200" alt="torre1">
+                <img class="opacity_2" src="https://picsum.photos/id/234/200/200" alt="torre2">
+                <img class="opacity_3" src="https://picsum.photos/id/234/200/200" alt="torre3">
+                <img class="opacity_4" src="https://picsum.photos/id/234/200/200" alt="torre4"> 
+                <img class="opacity_5" src="https://picsum.photos/id/234/200/200" alt="torre5">
+                <img class="opacity_6" src="https://picsum.photos/id/234/200/200" alt="torre6">
+                <img class="opacity_7" src="https://picsum.photos/id/234/200/200" alt="torre7">
+                <img class="opacity_8" src="https://picsum.photos/id/234/200/200" alt="torre8">
+                <img class="opacity_9" src="https://picsum.photos/id/234/200/200" alt="torre9">
+                <img class="opacity_10" src="https://picsum.photos/id/234/200/200" alt="torre10">
+                <img class="opacity_11" src="https://picsum.photos/id/234/200/200" alt="torre11">
+                <img class="opacity_12" src="https://picsum.photos/id/234/200/200" alt="torre12">
+            </div>
         </div>
                 
         <!--  Especificidade CS -->
@@ -894,9 +747,6 @@
                 border: 0.1px solid rgb(190, 187, 187); | 
                 box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
             </p>
-            
-            <br>
-            <hr>
         </div>
 
         <!-- Efeitos de Texto em card-->
@@ -978,36 +828,9 @@
 
             </code></pre>
         </div>
-
-        <!-- Media Queries  class="Media-Queries"-->
-        <div class="ordem">
-            <br>
-            <h2>Media Queries</h2><br>
-            <h3>Os tamanhos de telas</h3><br>
-            <p>
-                Smartphones (600px para baixo) <br>
-                @media only screen and (max-width: 600px) {O que vai acontecer informe os parametros}
-                <br><br>
-
-                Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) <br>
-                @media only screen and (min-width: 600px) {O que vai acontecer informe os parametros}
-                <br><br>
-                Dispostivos Médios (Tablets deitados, 768px para cima) <br>
-                @media only screen and (min-width: 768px) {O que vai acontecer informe os parametros}
-                <br><br>
-                Dispostivos Largos (laptops/desktops, 992px para cima) <br>
-                @media only screen and (min-width: 992px) {O que vai acontecer informe os parametros}
-                <br><br>
-                Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) <br>
-                @media only screen and (min-width: 1200px) {O que vai acontecer informe os parametros}
-            </p>
-            <p></p>
-        </div>
     </main>
     
     <footer>
-        <p class="whatsApp" >
-            <a href="https://wa.me/5547992363700?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20você!" target="_blank"> 💬 Contato do WhatsApp</a>
     </footer>
 </body>
 </html>
