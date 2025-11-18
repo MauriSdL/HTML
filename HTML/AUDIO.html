@@ -22,11 +22,20 @@
         <div class="player">
             <img src="../IMG/img-player.png" alt="player">
             
-            <audio controlsList="nodownload"
+            <audio
                 controls
                 src="../AUDIO/Jesse_y_Joy.mp3"
-                type="audio/mpeg">
+                type="audio/mpeg"
+                id="audio-player">
             </audio>
+            <script>
+                document.getElementById('audio-player').addEventListener('loadedmetadata', function() {
+                    const audio = document.getElementById('audio-player');
+                    const controls = audio.controls;
+                    audio.controls = false;
+                    audio.controls = controls;
+                });
+            </script>
         </div>
 
         
