@@ -24,6 +24,13 @@ h3 {
     background-color: aqua;
 }
 
+.variaveis {
+    margin: 15px 5% 15px 5%;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: aqua;
+}
+
 .tipo-de-bordas {
     display: flex;
     flex-direction: row;
@@ -162,86 +169,115 @@ img {
 
 /* Opacity imagem transparencia */
 .container-pai{
+    display: block;
     background-color: aqua;
-    margin: 0px 70px 0px 70px;
-    border-radius: 25px;
+    margin: 0px 90px 0px 90px;
+    border-radius: 25px 25px;
 }
 
 
 .filho1{
-    width: 60%;
+    margin: 10px;
     height: auto;
     background-color:aqua;
+    border-radius: 25px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 .opacity_1 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.0;
 }
 
 .opacity_2 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.05;
 }
 
 .opacity_3 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.1;
 }
 
 .opacity_4 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.2;
 }
 
 .opacity_5 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.3;
 }
 
 .opacity_6 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.4;
 }
 
 .opacity_7 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.5;
 }
 
 .opacity_8 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.6;
 }
 
 .opacity_9 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.7;
 }
 
 .opacity_10 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.8;
 }
 
 .opacity_11 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 0.9;
 }
 
 .opacity_12 {
+    border: 3px solid yellow;
+    margin: 10px;
     width: 15%;
     height: auto;
     opacity: 1;
